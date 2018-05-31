@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/id_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ezHeaderBg"
+        android:paddingBottom="@dimen/screen_bottom_padding"
+        android:paddingLeft="@dimen/screen_left_padding"
+        android:paddingRight="@dimen/screen_right_padding"
+        android:paddingTop="@dimen/screen_top_padding" >
+
+        <TextView
+            android:id="@+id/txt_screen_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Screen Title"
+            android:textColor="@color/ezHeaderTextColor"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/id_filters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_screen_title"
+            android:orientation="horizontal"
+            android:paddingTop="6dp" >
+
+            <Spinner
+                android:id="@+id/id_header_spinner"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_margin="2dp"
+                android:layout_weight="6"
+                android:background="@drawable/spinner_bg"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:textColor="@color/textDarker"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/edit_name_view"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="6" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:hint="Patient Name | Patient ID"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_clear_filter"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/close_button"
+                    android:padding="10dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/start_date_view"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="6"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/txt_start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center_vertical"
+                    android:hint="From date (mm/dd/yyyy)"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_start_date_clear_filter"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/close_button"
+                    android:padding="10dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/end_date_view"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="6"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/txt_end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center_vertical"
+                    android:hint="To date (mm/dd/yyyy)"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_end_date_clear_filter"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/close_button"
+                    android:padding="10dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/edit_date_view"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="6" >
+
+                <TextView
+                    android:id="@+id/edit_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center_vertical"
+                    android:hint="Monthly Calender (dd/mm/yyyy)"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_date_clear_filter"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/close_button"
+                    android:padding="10dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/btn_search"
+                style="@style/EzButtonNormal"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_blue"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Search"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/id_header"
+        android:background="#e8e8e8" />
+
+    <TextView
+        android:id="@+id/txt_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_1"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="12dp"
+        android:paddingLeft="@dimen/inner_padding_content"
+        android:paddingRight="@dimen/inner_padding_content"
+        android:paddingTop="12dp"
+        android:text="..."
+        android:textColor="#464646"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/line_2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/txt_count"
+        android:background="#e8e8e8" />
+
+</RelativeLayout>

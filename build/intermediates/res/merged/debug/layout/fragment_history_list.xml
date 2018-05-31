@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_history"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="@dimen/screen_right_margin" >
+
+    <include
+        android:id="@+id/id_header"
+        layout="@layout/ez_header_filter_count" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_header" >
+    </ListView>
+
+    <View
+        android:id="@+id/id_buttons_top"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/id_buttons_bar"
+        android:background="@color/accent_color_light" />
+
+    <RelativeLayout
+        android:id="@+id/id_buttons_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/accent_color_light"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#f4f4f4"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_view"
+                    style="@style/EzHorizontalBarButton"
+                    android:text="View" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginTop="4dip"
+                    android:background="#d0d0d0" />
+
+                <Button
+                    android:id="@+id/btn_reschedule"
+                    style="@style/EzHorizontalBarButton"
+                    android:text="Re-Schedule" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginTop="4dip"
+                    android:background="#d0d0d0" />
+
+                <Button
+                    android:id="@+id/btn_follow"
+                    style="@style/EzHorizontalBarButton"
+                    android:text="Follow Up" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginTop="4dip"
+                    android:background="#d0d0d0" />
+
+                <Button
+                    android:id="@+id/btn_sendmessage"
+                    style="@style/EzHorizontalBarButton"
+                    android:text="Send Message" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginTop="4dip"
+                    android:background="#d0d0d0" />
+
+                <Button
+                    android:id="@+id/btn_prescription"
+                    style="@style/EzHorizontalBarButton"
+                    android:text="Prescription" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginTop="4dip"
+                    android:background="#d0d0d0" />
+
+                <Button
+                    android:id="@+id/btn_visitnotes"
+                    style="@style/EzHorizontalBarButton"
+                    android:text="Visit Notes" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/listview_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:id="@+id/id_progressbar_main"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp" >
+            </ProgressBar>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/idlist_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_header"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="10" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <ProgressBar
+            android:id="@+id/id_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="4" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="4" />
+    </LinearLayout>
+
+</RelativeLayout>

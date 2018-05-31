@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_tooth"
+    android:padding="10dp" >
+
+    <View
+        android:id="@+id/line_center_horizontal"
+        android:layout_width="4dp"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:background="#000000" />
+
+    <View
+        android:id="@+id/line_center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_centerVertical="true"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line_center_vertical"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@+id/line_center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/tooth18"
+            android:clickable="true"
+            android:tag="tooth18" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/tooth17"
+            android:tag="tooth17" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/tooth16"
+            android:tag="tooth16" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/tooth15"
+            android:tag="tooth15" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/tooth14"
+            android:tag="tooth14" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/tooth13"
+            android:tag="tooth13" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitEnd"
+            android:tag="tooth12"
+            android:src="@drawable/tooth12" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitEnd"
+            android:tag="tooth11"
+            android:src="@drawable/tooth11" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line_center_vertical"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/line_center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/tooth21"
+            android:tag="tooth21" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/tooth22"
+            android:tag="tooth22" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/tooth23"
+            android:tag="tooth23" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/tooth24"
+            android:tag="tooth24" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/tooth25"
+            android:tag="tooth25" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/tooth26"
+            android:tag="tooth26" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/tooth27"
+            android:tag="tooth27" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/tooth28"
+            android:tag="tooth28" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line_center_vertical"
+        android:layout_toLeftOf="@+id/line_center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/tooth48"
+            android:tag="tooth48" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitStart"
+            android:tag="tooth47"
+            android:src="@drawable/tooth47" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitStart"
+            android:tag="tooth46"
+            android:src="@drawable/tooth46" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:scaleType="fitStart"
+            android:tag="tooth45"
+            android:src="@drawable/tooth45" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tag="tooth44"
+            android:scaleType="fitStart"
+            android:src="@drawable/tooth44" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tag="tooth43"
+            android:scaleType="fitStart"
+            android:src="@drawable/tooth43" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tag="tooth42"
+            android:scaleType="fitStart"
+            android:src="@drawable/tooth42" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tag="tooth41"
+            android:scaleType="fitStart"
+            android:src="@drawable/tooth41" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line_center_vertical"
+        android:layout_toRightOf="@+id/line_center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tag="tooth31"
+            android:scaleType="fitStart"
+            android:src="@drawable/tooth31" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tag="tooth32"
+            android:scaleType="fitStart"
+            android:src="@drawable/tooth32" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tag="tooth33"
+            android:scaleType="fitStart"
+            android:src="@drawable/tooth33" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tag="tooth34"
+            android:scaleType="fitStart"
+            android:src="@drawable/tooth34" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tag="tooth35"
+            android:scaleType="fitStart"
+            android:src="@drawable/tooth35" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tag="tooth36"
+            android:scaleType="fitStart"
+            android:src="@drawable/tooth36" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tag="tooth37"
+            android:scaleType="fitStart"
+            android:src="@drawable/tooth37" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tag="tooth38"
+            android:scaleType="fitStart"
+            android:src="@drawable/tooth38" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="12dp" >
+
+    <include
+        android:id="@+id/id_header"
+        layout="@layout/ez_dialog_header" >
+    </include>
+
+    <ScrollView
+        android:id="@+id/scroll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id_footer"
+        android:layout_below="@+id/id_header" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txt_pp_line1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/privacy_policy_line1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_pp_line2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pp_line1"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/privacy_policy_line2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_pp_line3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pp_line2"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/information_collection_header"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_pp_line4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pp_line3"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/information_collection_details"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_pp_line5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pp_line4"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/information_sharing_header"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_pp_line6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pp_line5"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/information_sharing_details"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_pp_line7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pp_line6"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/access_personal_info_header"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_pp_line8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pp_line7"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/access_personal_info_details"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_pp_line9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pp_line8"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/security_header"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_pp_line10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pp_line9"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/security_details"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_pp_line11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pp_line10"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/pp_miscellaneous_header"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_pp_line12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pp_line11"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/pp_miscellaneous_details"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_pp_line13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pp_line12"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/pp_amendments_header"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_pp_line14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pp_line13"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/pp_amendments_details"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/id_footer"
+        layout="@layout/ez_dialog_footer" >
+    </include>
+
+</RelativeLayout>

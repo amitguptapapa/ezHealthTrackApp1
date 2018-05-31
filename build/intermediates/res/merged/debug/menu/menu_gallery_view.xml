@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <item
+        android:id="@+id/menu_add_photo"
+        android:icon="@drawable/ic_action_attachment"
+        android:orderInCategory="1"
+        android:title="Add Photo"
+        android:visible="true"
+        app:showAsAction="always"
+        tools:ignore="HardcodedText"/>
+
+</menu>

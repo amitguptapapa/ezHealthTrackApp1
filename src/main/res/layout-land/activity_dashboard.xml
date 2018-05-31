@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:baselineAligned="false"
+    tools:context=".LabsDashboardActivity" >
+
+	<TextView
+	    android:id="@+id/txt_time"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="15dp"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/bg_blue_round"
+	    android:padding="10dp"
+	    android:textSize="16sp"
+	    android:textStyle="bold"
+	    android:text="19/02/2014" />
+
+    <FrameLayout
+        android:id="@+id/side_fragment"
+        android:layout_width="250dp"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/side_fragment" />
+
+    <RelativeLayout
+        android:id="@+id/loading_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77000000"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderCreateActivity" >
+
+    <TextView
+        android:id="@+id/txt_order_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="Order Update"
+        android:textColor="#9AB8D8"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rl_patient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_order_create"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_blue_round"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Patient :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_pname_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_name"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txt_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Order :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_order_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_order"
+            android:text="NA"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txt_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_order"
+            android:text="Order Status :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_order_status_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_order_status"
+            android:text="New"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txt_order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Order Date :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_order_date_display"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_order_date"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/spinner_technician"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_order"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="490dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_order_date"
+            android:background="@drawable/spinner_bg"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/txt_generate_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/spinner_technician"
+            android:text="Generate Bill : "
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_generate_bill"
+            style="@style/Spinner"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_order"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_generate_bill"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txt_external_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_order_date"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Order Id :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_external_order_id"
+            style="@style/SingleLineEditText"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_order_date"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_external_order_id"
+            android:gravity="start"
+            android:hint="External Order ID"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_home_visit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_technician"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/edit_external_order_id"
+            android:text="Home Visit : "
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_home_visit"
+            style="@style/Spinner"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/spinner_technician"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_home_visit"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cb_send_pat_not"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_generate_bill"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/spinner_home_visit"
+            android:text="Send Patient Notification"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/rl_patient"
+        android:minHeight="100dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/rl_note_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/actv_doc_details_note"
+                    style="@style/MultiLineEditText"
+                    android:layout_width="500dp"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:hint="Doctor Name, Hospital Address"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/edit_note"
+                    style="@style/MultiLineEditText"
+                    android:layout_width="500dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@+id/actv_doc_details_note"
+                    android:gravity="start"
+                    android:hint="Note"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_scroll_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_note_field" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_order_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" >
+
+                    <TextView
+                        android:id="@+id/txt_order_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:text="Order Items"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/view_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/txt_order_items"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="#000000" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_test_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view_line"
+                        android:layout_marginLeft="20dp" >
+
+                        <TextView
+                            android:id="@+id/txt_test_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Test Name"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_sample"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="400dp"
+                            android:layout_toRightOf="@+id/txt_test_name"
+                            android:text="Sample"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="350dp"
+                            android:layout_toRightOf="@+id/txt_sample"
+                            android:text="Price"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_test_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_test_name"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:minHeight="80dp"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll" >
+
+        <TextView
+            android:id="@+id/txt_lab_tests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:text="Lab Tests"
+            android:textColor="#A0A0A0"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_lab_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_lab_tests"
+            android:padding="10dp"
+            android:text="Lab Panels"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rl_lab_tests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_lab_tests"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" >
+
+            <AutoCompleteTextView
+                android:id="@+id/actv_search_lab_tests"
+                style="@style/SingleLineEditText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:hint="Search Lab Test"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/view_line_1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/actv_search_lab_tests"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#000000" />
+
+            <GridView
+                android:id="@+id/grid_lab_tests_list"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/view_line_1"
+                android:columnWidth="90dp"
+                android:horizontalSpacing="10dp"
+                android:minHeight="80dp"
+                android:numColumns="5"
+                android:verticalSpacing="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_lab_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_lab_tests"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone" >
+
+            <AutoCompleteTextView
+                android:id="@+id/actv_search_lab_panels"
+                style="@style/SingleLineEditText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:hint="Search Lab Panel"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/view_line_2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/actv_search_lab_panels"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#000000" />
+
+            <GridView
+                android:id="@+id/grid_lab_panels_list"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/view_line_2"
+                android:columnWidth="90dp"
+                android:horizontalSpacing="10dp"
+                android:minHeight="80dp"
+                android:numColumns="5"
+                android:verticalSpacing="10dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rl_main"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_grey"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+</RelativeLayout>

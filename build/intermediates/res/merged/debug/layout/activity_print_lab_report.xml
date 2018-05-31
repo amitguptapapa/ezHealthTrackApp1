@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_window" >
+
+    <ScrollView
+        android:id="@+id/id_scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:scrollbars="none" >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_lab_info"
+                    style="@style/SingleLineEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:padding="18dp" >
+
+                    <TextView
+                        android:id="@+id/txt_lab_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lab Name"
+                        android:textColor="#008080"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_lab_motto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_lab_name"
+                        android:layout_marginTop="10dp"
+                        android:text="Lab Motto"
+                        android:textColor="@color/textDarker"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_lab_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_lab_motto"
+                        android:layout_marginTop="4dp"
+                        android:text="Lab Address"
+                        android:textColor="@color/textDarker"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_phone_lab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_lab_address"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/phn"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:text="987654321"
+                        android:textColor="@color/textLight"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/img_lab"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/patient_image" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_patient_info"
+                    style="@style/SingleLineEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:padding="18dp" >
+
+                    <TextView
+                        android:id="@+id/txt_patient_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Patient Name"
+                        android:textColor="@color/textDarker"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_patient_address"
+                        android:layout_width="500dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_patient_name"
+                        android:layout_marginTop="4dp"
+                        android:text="Patient Address"
+                        android:textColor="@color/textDarker"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_patient_address"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/phn"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:text="987654321"
+                        android:textColor="@color/textLight"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_patient_address"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/txt_phone"
+                        android:drawableLeft="@drawable/email"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:text="abc@gmail.com"
+                        android:textColor="@color/textLight"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_order_id"
+                        style="@style/TextKVKeyStd"
+                        android:layout_marginLeft="600dp"
+                        android:text="Order Id :" />
+
+                    <TextView
+                        android:id="@+id/txt_order_id_display"
+                        style="@style/TextKVValueStd"
+                        android:layout_marginBottom="6dp"
+                        android:layout_toRightOf="@+id/txt_order_id"
+                        android:text="Order Id" />
+
+                    <TextView
+                        android:id="@+id/txt_reporting_date"
+                        style="@style/TextKVKeyStd"
+                        android:layout_below="@+id/txt_order_id_display"
+                        android:layout_marginLeft="600dp"
+                        android:text="Reporting Date :" />
+
+                    <TextView
+                        android:id="@+id/txt_date_display"
+                        style="@style/TextKVValueStd"
+                        android:layout_below="@+id/txt_order_id_display"
+                        android:layout_marginBottom="6dp"
+                        android:layout_toRightOf="@+id/txt_reporting_date"
+                        android:text="date" />
+
+                    <TextView
+                        android:id="@+id/txt_report_avai_date"
+                        style="@style/TextKVKeyStd"
+                        android:layout_below="@+id/txt_date_display"
+                        android:layout_marginLeft="600dp"
+                        android:text="Report Availability Date :" />
+
+                    <TextView
+                        android:id="@+id/txt_report_avai_date_display"
+                        style="@style/TextKVValueStd"
+                        android:layout_below="@+id/txt_date_display"
+                        android:layout_toRightOf="@+id/txt_report_avai_date"
+                        android:text="date" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_main"
+                    style="@style/SingleLineEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:padding="18dp" >
+
+                    <LinearLayout
+                        android:id="@+id/id_test_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4" >
+
+                        <TextView
+                            android:id="@+id/txt_test_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="Test Name"
+                            android:textColor="@color/textDarker"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_observed_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="Observed Value"
+                            android:textColor="@color/textDarker"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_r_range"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="Reference Range"
+                            android:textColor="@color/textDarker"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_notes"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="Notes"
+                            android:textColor="@color/textDarker"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/id_test_name"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/textDarker" />
+
+                    <TextView
+                        android:id="@+id/txt_panel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view_line"
+                        android:layout_marginTop="24dp"
+                        android:text="Panel"
+                        android:textColor="@color/textDarker"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_test_name_display"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_panel"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_lab_signature"
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/ll_test_name_display"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="100dp"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/txt_tech_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_lab_signature"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Technician Name"
+                        android:textColor="@color/textDarker"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</RelativeLayout>

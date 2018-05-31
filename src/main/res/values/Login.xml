@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="desc">Ez Logo</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="new_user"><u><b>Sign Up</b></u> as a Patient</string>
+    <string name="signup">Sign up</string>
+    <string name="set">Set</string>
+    <string name="send">Send</string>
+    <string name="hint_set_server">Enter Server name</string>
+    <string name="hint_set_server_auth">Enter Password</string>
+    <string name="auth">Authenticate</string>
+    <string name="submit">Submit</string>
+    <string name="hint_reason">Reason</string>
+</resources>

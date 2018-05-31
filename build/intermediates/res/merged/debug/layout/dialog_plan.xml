@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/txt_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_diagnosis"
+        android:layout_marginTop="15dp"
+        android:background="@color/HeaderBg"
+        android:padding="10dp"
+        android:text="@string/Plan"
+        android:textColor="@color/TextBlue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/ll_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_plan" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/txt_radiology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="1055dp"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:padding="0.5dp" >
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/txt_lab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:id="@+id/table_lab"
+                android:layout_width="1055dp"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:padding="0.5dp" >
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/txt_prescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:id="@+id/table_prescription"
+                android:layout_width="1200dp"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:padding="0.5dp" >
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/txt_treatment_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_treatment_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_allergy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:padding="5dp"
+                android:text="Allergy :"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:padding="5dp"
+                android:text="Private Notes"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_private_notes"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/edit_text_disabled_bg"
+                android:lineSpacingExtra="5dp"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/txt_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/close"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

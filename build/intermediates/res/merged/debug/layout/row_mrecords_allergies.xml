@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_window"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="8dp" >
+
+    <TextView
+        android:id="@+id/txt_medrec_allergies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        style="@style/EzButtonSmaller"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_medrec_allergies"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/button_cyan"
+        android:text=" Delete"
+        android:visibility="gone" />
+
+</RelativeLayout>

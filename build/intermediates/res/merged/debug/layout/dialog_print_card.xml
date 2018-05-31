@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_print"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_main"
+            android:layout_width="wrap_content"
+            android:layout_height="230dp" >
+
+            <ImageView
+                android:id="@+id/img_barcode"
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true" />
+
+            <RelativeLayout
+                android:id="@+id/rl_img"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_below="@+id/img_barcode"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/img_pat"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/bg_blue_round"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/noimage" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_barcode"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/rl_img" >
+
+                <TextView
+                    android:id="@+id/txt_pat_name"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_birthdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_pat_name"
+                    android:layout_marginTop="10dp"
+                    android:text="BIRTHDATE"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_birthdate_display"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_birthdate"
+                    android:text="DOB"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_pat_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/txt_birthdate"
+                    android:text="GENDER"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_gender_display"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_gender"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/txt_birthdate"
+                    android:text="Address"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_birthdate"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="33dp"
+                    android:src="@drawable/phn" />
+
+                <TextView
+                    android:id="@+id/txt_pat_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_birthdate"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/img_phone"
+                    android:text=" "
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_details"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="www.ezhealthtrack.com"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_print"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rl_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_grey"
+        android:drawableLeft="@drawable/print"
+        android:padding="10dp"
+        android:text=" Print"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+</RelativeLayout>

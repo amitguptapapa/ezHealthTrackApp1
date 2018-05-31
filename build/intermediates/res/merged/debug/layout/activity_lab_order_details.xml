@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <TextView
+        android:id="@+id/txt_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main.title.bg"
+        android:gravity="center"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:text="Lab Order Details"
+        android:textColor="@color/main.title.textColor"
+        android:textSize="@dimen/main.title.textSize"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ScrollView
+        android:id="@+id/id_scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_order_details"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/id_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f4f4f4"
+                android:orientation="vertical"
+                android:padding="@dimen/inner_padding_content" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/inner_padding"
+                    android:paddingRight="@dimen/inner_padding" >
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        style="@style/TextKVKeyStd"
+                        android:text="Patient :" />
+
+                    <TextView
+                        android:id="@+id/txt_name_display"
+                        style="@style/TextKVValueStd"
+                        android:layout_toRightOf="@+id/txt_name"
+                        android:text="Patient Name" />
+
+                    <TextView
+                        android:id="@+id/txt_order_date"
+                        style="@style/TextKVKeyStd"
+                        android:layout_below="@+id/txt_name_display"
+                        android:text="Order Date :" />
+
+                    <TextView
+                        android:id="@+id/txt_order_date_display"
+                        style="@style/TextKVValueStd"
+                        android:layout_below="@+id/txt_name_display"
+                        android:layout_toRightOf="@+id/txt_order_date"
+                        android:text="Order Date" />
+
+                    <TextView
+                        android:id="@+id/txt_order"
+                        style="@style/TextKVKeyStd"
+                        android:layout_below="@+id/txt_order_date_display"
+                        android:text="Order :" />
+
+                    <TextView
+                        android:id="@+id/txt_order_display"
+                        style="@style/TextKVValueStd"
+                        android:layout_below="@+id/txt_order_date_display"
+                        android:layout_toRightOf="@+id/txt_order"
+                        android:text="Order" />
+
+                    <TextView
+                        android:id="@+id/txt_technician"
+                        style="@style/TextKVKeyStd"
+                        android:layout_below="@+id/txt_order_display"
+                        android:text="Technician :" />
+
+                    <TextView
+                        android:id="@+id/txt_technician_display"
+                        style="@style/TextKVValueStd"
+                        android:layout_below="@+id/txt_order_display"
+                        android:layout_toRightOf="@+id/txt_technician"
+                        android:text="Technician" />
+
+                    <TextView
+                        android:id="@+id/txt_order_status"
+                        style="@style/TextKVKeyStd"
+                        android:layout_below="@+id/txt_technician_display"
+                        android:text="Order Status :" />
+
+                    <TextView
+                        android:id="@+id/txt_order_status_display"
+                        style="@style/TextKVValueStd"
+                        android:layout_below="@+id/txt_technician_display"
+                        android:layout_toRightOf="@+id/txt_order_status"
+                        android:text="Order Status" />
+
+                    <TextView
+                        android:id="@+id/txt_doctor"
+                        style="@style/TextKVKeyStd"
+                        android:layout_below="@+id/txt_order_status_display"
+                        android:text="Doctor :" />
+
+                    <TextView
+                        android:id="@+id/txt_doctor_display"
+                        style="@style/TextKVValueStd"
+                        android:layout_below="@+id/txt_order_status_display"
+                        android:layout_toRightOf="@+id/txt_doctor"
+                        android:text="Doctor" />
+
+                    <TextView
+                        android:id="@+id/txt_approval_status"
+                        style="@style/TextKVKeyStd"
+                        android:layout_below="@+id/txt_doctor_display"
+                        android:text="Approval Status :" />
+
+                    <TextView
+                        android:id="@+id/txt_approval_status_display"
+                        style="@style/TextKVValueStd"
+                        android:layout_below="@+id/txt_doctor_display"
+                        android:layout_toRightOf="@+id/txt_approval_status"
+                        android:text="Approval Status" />
+
+                    <TextView
+                        android:id="@+id/txt_home_visit"
+                        style="@style/TextKVKeyStd"
+                        android:layout_below="@+id/txt_approval_status_display"
+                        android:text="Home Visit :" />
+
+                    <TextView
+                        android:id="@+id/txt_home_visit_display"
+                        style="@style/TextKVValueStd"
+                        android:layout_below="@+id/txt_approval_status_display"
+                        android:layout_toRightOf="@+id/txt_home_visit"
+                        android:text="Home Visit" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/id_header_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/id_header"
+                android:background="#e0e0e0" />
+
+            <LinearLayout
+                android:id="@+id/rl_order_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_header_line"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="@dimen/inner_padding_content"
+                android:weightSum="6" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="Test Name"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="Date"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="Report Ready"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_test_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_order_items"
+                android:minHeight="60dp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/inner_padding_content"
+                android:paddingRight="@dimen/inner_padding_content" >
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll_test_list"
+                android:layout_margin="@dimen/inner_padding_content"
+                android:background="#c0c0c0" />
+
+            <LinearLayout
+                android:id="@+id/ll_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/inner_padding_content" >
+
+                <Button
+                    android:id="@+id/btn_message"
+                    style="@style/EzButtonLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="@dimen/inner_padding_content"
+                    android:background="@drawable/button_blue"
+                    android:text="Send Message" />
+
+                <Button
+                    android:id="@+id/btn_view_all_reports"
+                    style="@style/EzButtonNormal"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/button_blue"
+                    android:text="View All Reports" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/idll_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_order_details"
+        android:background="#fff"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

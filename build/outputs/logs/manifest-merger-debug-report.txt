@@ -1,0 +1,801 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:5:1-365:12
+	package
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:7:5-32
+		INJECTED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml
+		INJECTED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:9:5-32
+		INJECTED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml
+		INJECTED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:6:5-51
+	android:versionCode
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:8:5-28
+		INJECTED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml
+		INJECTED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:5:11-69
+uses-sdk
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:26:5-28:41
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\Sareen\.android\build-cache\eab4f14e6cb12ddfb12129b3d093d2123cfd785a\output\AndroidManifest.xml:18:5-42
+MERGED from [EzHealthTrackApp:fileChooserActivity:unspecified] C:\Workspace\EzHealthTrackApp\fileChooserActivity\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
+MERGED from [EzHealthTrackApp:progresswheel:unspecified] C:\Workspace\EzHealthTrackApp\progresswheel\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:40
+MERGED from [EzHealthTrackApp:slidingTab:unspecified] C:\Workspace\EzHealthTrackApp\slidingTab\build\intermediates\bundles\default\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:24.2.1] C:\Users\Sareen\.android\build-cache\d3a65bf4381f9db1da04b07843e4b5aad6855357\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:21.0.3] C:\Users\Sareen\.android\build-cache\4b3de9270ce44720406cd986d99c2f71869b5544\output\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:recyclerview-v7:24.2.1] C:\Users\Sareen\.android\build-cache\adb3ca1618d90510f21fe6edc6c641eef171789a\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services:7.8.0] C:\Users\Sareen\.android\build-cache\e9530c57ea54edaa72e82411af0f3363261077cc\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sareen\.android\build-cache\846cbf57511a13ba82c1da3883e328c8aed38786\output\AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sareen\.android\build-cache\06f8d794080af00b28b9e6c5c71a01c0a18326dc\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:7.8.0] C:\Users\Sareen\.android\build-cache\ab06bb34eb8db69104a5a471112eb8ee35962092\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appinvite:7.8.0] C:\Users\Sareen\.android\build-cache\f2665bd7ce64de79251a2a6d8e1d7f9b2e24b250\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appstate:7.8.0] C:\Users\Sareen\.android\build-cache\ccb9068f62206b2f3ac9031caf6d63e754ec43e7\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-cast:7.8.0] C:\Users\Sareen\.android\build-cache\4bacf2850ddba7d091dc4b7ea1398b5466007efe\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:mediarouter-v7:22.2.0] C:\Users\Sareen\.android\build-cache\92fb99b4d84c1a1a96d0bf4718e0b482c9796085\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\Sareen\.android\build-cache\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\Sareen\.android\build-cache\98d9015d85a6ba1127a1fe7b3466ab1464d56ab4\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\Sareen\.android\build-cache\8fc1a706a863afef6dea722ac438abd0df9f1078\output\AndroidManifest.xml:21:5-43
+MERGED from [com.google.android.gms:play-services-fitness:7.8.0] C:\Users\Sareen\.android\build-cache\26b9f01dc6962b18206290ee7de25c1d9dafdcdc\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-games:7.8.0] C:\Users\Sareen\.android\build-cache\a788811a992971b0158560ad2ff727201d724fea\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-drive:7.8.0] C:\Users\Sareen\.android\build-cache\ab6334120229164e63107293051bd755a674e810\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-gcm:7.8.0] C:\Users\Sareen\.android\build-cache\5efea9bfc0d95d6bdcc01db122bc4d833e74603b\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-location:7.8.0] C:\Users\Sareen\.android\build-cache\ad06f8cfa92b089bac9359dd855fd9f45b2d41f1\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-nearby:7.8.0] C:\Users\Sareen\.android\build-cache\a3f85e88dd9a24653f026ec4e6e41e300e7b3fa5\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-panorama:7.8.0] C:\Users\Sareen\.android\build-cache\f6ec5a8e6ed572495360319e2721ff75c3a09b4a\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-plus:7.8.0] C:\Users\Sareen\.android\build-cache\4e4d5cf79d99b2fc468647ffd0f073280121a974\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-safetynet:7.8.0] C:\Users\Sareen\.android\build-cache\42c8a749e7bfe74275ebb96801e12dde783cfb4b\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-vision:7.8.0] C:\Users\Sareen\.android\build-cache\6956a81205e0d16ea07ff8ab58a1447f232fa153\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-wallet:7.8.0] C:\Users\Sareen\.android\build-cache\7a5b63114ff39d7563498fcb0a7ab914953214f4\output\AndroidManifest.xml:19:5-42
+MERGED from [com.google.android.gms:play-services-identity:7.8.0] C:\Users\Sareen\.android\build-cache\0ad6e381719fb2c7d8a94310495685a599c08117\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sareen\.android\build-cache\45945abb8b0262fb21f466f39988b8a85ea42489\output\AndroidManifest.xml:27:5-42
+MERGED from [com.google.android.gms:play-services-wearable:7.8.0] C:\Users\Sareen\.android\build-cache\a7a728666e75a57cd2145e51369050f243e6c2ff\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sareen\.android\build-cache\5e9027168c0594138e7f9aa98b6769fb4fd32278\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.2.1] C:\Users\Sareen\.android\build-cache\9818f1cbee3b66d3ec91bf2f6ee12094f161d0b8\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\Sareen\.android\build-cache\a312f62eb3dde8e0ec7a94dc32fc49517bff05a8\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\Sareen\.android\build-cache\cf11b341bb3f35b253510763fb2ad9a88a056056\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\Sareen\.android\build-cache\098020efe9272b8100353e8b0f86d8d593cbc918\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\Sareen\.android\build-cache\e7aa03c34293b679fd052b7c3e3d23850ffea750\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Sareen\.android\build-cache\fc620e43c42f2ce423fd43643e5d34b9035d808b\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:24.2.1] C:\Users\Sareen\.android\build-cache\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:28:9-38
+		INJECTED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml
+		INJECTED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:27:9-35
+		INJECTED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml
+		INJECTED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:30:5-67
+MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sareen\.android\build-cache\846cbf57511a13ba82c1da3883e328c8aed38786\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sareen\.android\build-cache\06f8d794080af00b28b9e6c5c71a01c0a18326dc\output\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-appinvite:7.8.0] C:\Users\Sareen\.android\build-cache\f2665bd7ce64de79251a2a6d8e1d7f9b2e24b250\output\AndroidManifest.xml:19:5-67
+MERGED from [com.google.android.gms:play-services-gcm:7.8.0] C:\Users\Sareen\.android\build-cache\5efea9bfc0d95d6bdcc01db122bc4d833e74603b\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-wallet:7.8.0] C:\Users\Sareen\.android\build-cache\7a5b63114ff39d7563498fcb0a7ab914953214f4\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sareen\.android\build-cache\45945abb8b0262fb21f466f39988b8a85ea42489\output\AndroidManifest.xml:21:5-66
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:30:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:31:5-81
+MERGED from [EzHealthTrackApp:fileChooserActivity:unspecified] C:\Workspace\EzHealthTrackApp\fileChooserActivity\build\intermediates\bundles\default\AndroidManifest.xml:11:5-12:23
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sareen\.android\build-cache\45945abb8b0262fb21f466f39988b8a85ea42489\output\AndroidManifest.xml:22:5-80
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:31:22-78
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:32:5-71
+MERGED from [com.google.android.gms:play-services-wallet:7.8.0] C:\Users\Sareen\.android\build-cache\7a5b63114ff39d7563498fcb0a7ab914953214f4\output\AndroidManifest.xml:21:5-70
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:32:22-68
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:33:5-68
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:33:22-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:34:5-82
+MERGED from [com.google.android.gms:play-services-gcm:7.8.0] C:\Users\Sareen\.android\build-cache\5efea9bfc0d95d6bdcc01db122bc4d833e74603b\output\AndroidManifest.xml:21:5-82
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:34:22-79
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:35:5-79
+MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sareen\.android\build-cache\846cbf57511a13ba82c1da3883e328c8aed38786\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sareen\.android\build-cache\06f8d794080af00b28b9e6c5c71a01c0a18326dc\output\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-nearby:7.8.0] C:\Users\Sareen\.android\build-cache\a3f85e88dd9a24653f026ec4e6e41e300e7b3fa5\output\AndroidManifest.xml:19:5-79
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sareen\.android\build-cache\45945abb8b0262fb21f466f39988b8a85ea42489\output\AndroidManifest.xml:20:5-78
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:35:22-76
+uses-permission#android.permission.SET_TIME_ZONE
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:36:5-72
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:36:22-69
+permission#com.ezhealthtrack.gcm.permission.C2D_MESSAGE
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:38:5-40:47
+	android:protectionLevel
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:40:9-44
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:39:9-68
+uses-permission#com.ezhealthtrack.gcm.permission.C2D_MESSAGE
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:42:5-84
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:42:22-81
+supports-screens
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:46:5-51:41
+	android:largeScreens
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:48:9-36
+	android:smallScreens
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:50:9-36
+	android:normalScreens
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:49:9-37
+	android:xlargeScreens
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:51:9-38
+	android:anyDensity
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:47:9-34
+application
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:69:5-363:19
+MERGED from [EzHealthTrackApp:fileChooserActivity:unspecified] C:\Workspace\EzHealthTrackApp\fileChooserActivity\build\intermediates\bundles\default\AndroidManifest.xml:14:5-24:19
+MERGED from [EzHealthTrackApp:progresswheel:unspecified] C:\Workspace\EzHealthTrackApp\progresswheel\build\intermediates\bundles\default\AndroidManifest.xml:11:5-19:19
+MERGED from [EzHealthTrackApp:slidingTab:unspecified] C:\Workspace\EzHealthTrackApp\slidingTab\build\intermediates\bundles\default\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:24.2.1] C:\Users\Sareen\.android\build-cache\d3a65bf4381f9db1da04b07843e4b5aad6855357\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:21.0.3] C:\Users\Sareen\.android\build-cache\4b3de9270ce44720406cd986d99c2f71869b5544\output\AndroidManifest.xml:16:5-19
+MERGED from [com.google.android.gms:play-services:7.8.0] C:\Users\Sareen\.android\build-cache\e9530c57ea54edaa72e82411af0f3363261077cc\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sareen\.android\build-cache\846cbf57511a13ba82c1da3883e328c8aed38786\output\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sareen\.android\build-cache\06f8d794080af00b28b9e6c5c71a01c0a18326dc\output\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:7.8.0] C:\Users\Sareen\.android\build-cache\ab06bb34eb8db69104a5a471112eb8ee35962092\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-appinvite:7.8.0] C:\Users\Sareen\.android\build-cache\f2665bd7ce64de79251a2a6d8e1d7f9b2e24b250\output\AndroidManifest.xml:20:5-20
+MERGED from [com.google.android.gms:play-services-appstate:7.8.0] C:\Users\Sareen\.android\build-cache\ccb9068f62206b2f3ac9031caf6d63e754ec43e7\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-cast:7.8.0] C:\Users\Sareen\.android\build-cache\4bacf2850ddba7d091dc4b7ea1398b5466007efe\output\AndroidManifest.xml:19:5-20
+MERGED from [com.android.support:mediarouter-v7:22.2.0] C:\Users\Sareen\.android\build-cache\92fb99b4d84c1a1a96d0bf4718e0b482c9796085\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\Sareen\.android\build-cache\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\Sareen\.android\build-cache\98d9015d85a6ba1127a1fe7b3466ab1464d56ab4\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\Sareen\.android\build-cache\8fc1a706a863afef6dea722ac438abd0df9f1078\output\AndroidManifest.xml:23:5-20
+MERGED from [com.google.android.gms:play-services-fitness:7.8.0] C:\Users\Sareen\.android\build-cache\26b9f01dc6962b18206290ee7de25c1d9dafdcdc\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-games:7.8.0] C:\Users\Sareen\.android\build-cache\a788811a992971b0158560ad2ff727201d724fea\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-drive:7.8.0] C:\Users\Sareen\.android\build-cache\ab6334120229164e63107293051bd755a674e810\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-gcm:7.8.0] C:\Users\Sareen\.android\build-cache\5efea9bfc0d95d6bdcc01db122bc4d833e74603b\output\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-location:7.8.0] C:\Users\Sareen\.android\build-cache\ad06f8cfa92b089bac9359dd855fd9f45b2d41f1\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-nearby:7.8.0] C:\Users\Sareen\.android\build-cache\a3f85e88dd9a24653f026ec4e6e41e300e7b3fa5\output\AndroidManifest.xml:20:5-20
+MERGED from [com.google.android.gms:play-services-panorama:7.8.0] C:\Users\Sareen\.android\build-cache\f6ec5a8e6ed572495360319e2721ff75c3a09b4a\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-plus:7.8.0] C:\Users\Sareen\.android\build-cache\4e4d5cf79d99b2fc468647ffd0f073280121a974\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:7.8.0] C:\Users\Sareen\.android\build-cache\42c8a749e7bfe74275ebb96801e12dde783cfb4b\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-vision:7.8.0] C:\Users\Sareen\.android\build-cache\6956a81205e0d16ea07ff8ab58a1447f232fa153\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-identity:7.8.0] C:\Users\Sareen\.android\build-cache\0ad6e381719fb2c7d8a94310495685a599c08117\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sareen\.android\build-cache\45945abb8b0262fb21f466f39988b8a85ea42489\output\AndroidManifest.xml:28:5-20
+MERGED from [com.google.android.gms:play-services-wearable:7.8.0] C:\Users\Sareen\.android\build-cache\a7a728666e75a57cd2145e51369050f243e6c2ff\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sareen\.android\build-cache\5e9027168c0594138e7f9aa98b6769fb4fd32278\output\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.2.1] C:\Users\Sareen\.android\build-cache\9818f1cbee3b66d3ec91bf2f6ee12094f161d0b8\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\Sareen\.android\build-cache\a312f62eb3dde8e0ec7a94dc32fc49517bff05a8\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\Sareen\.android\build-cache\cf11b341bb3f35b253510763fb2ad9a88a056056\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\Sareen\.android\build-cache\098020efe9272b8100353e8b0f86d8d593cbc918\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\Sareen\.android\build-cache\e7aa03c34293b679fd052b7c3e3d23850ffea750\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Sareen\.android\build-cache\fc620e43c42f2ce423fd43643e5d34b9035d808b\output\AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from [EzHealthTrackApp:fileChooserActivity:unspecified] C:\Workspace\EzHealthTrackApp\fileChooserActivity\build\intermediates\bundles\default\AndroidManifest.xml:17:9-41
+	android:allowBackup
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:71:9-35
+	android:icon
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:72:9-45
+		REJECTED from [EzHealthTrackApp:fileChooserActivity:unspecified] C:\Workspace\EzHealthTrackApp\fileChooserActivity\build\intermediates\bundles\default\AndroidManifest.xml:16:9-37
+		REJECTED from [EzHealthTrackApp:progresswheel:unspecified] C:\Workspace\EzHealthTrackApp\progresswheel\build\intermediates\bundles\default\AndroidManifest.xml:12:9-45
+	android:largeHeap
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:73:9-33
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:74:9-40
+		REJECTED from [EzHealthTrackApp:fileChooserActivity:unspecified] C:\Workspace\EzHealthTrackApp\fileChooserActivity\build\intermediates\bundles\default\AndroidManifest.xml:18:9-40
+		REJECTED from [EzHealthTrackApp:progresswheel:unspecified] C:\Workspace\EzHealthTrackApp\progresswheel\build\intermediates\bundles\default\AndroidManifest.xml:14:9-56
+	tools:replace
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:75:9-52
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:70:9-47
+receiver#com.ezhealthtrack.gcm.GcmBroadcastReceiver
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:76:9-84:20
+	android:permission
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:78:13-73
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:77:13-53
+intent-filter#com.ezhealthtrack.gcm+com.google.android.c2dm.intent.RECEIVE
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:79:13-83:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:80:17-81
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:80:25-78
+category#com.ezhealthtrack.gcm
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:82:17-66
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:82:27-63
+service#com.ezhealthtrack.gcm.GcmIntentService
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:86:9-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:86:18-54
+activity#com.ezhealthtrack.activity.LoginActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:88:9-97:20
+	android:windowSoftInputMode
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:91:13-54
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:90:13-56
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:89:13-51
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:92:13-96:29
+action#android.intent.action.MAIN
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:93:17-69
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:93:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:95:17-77
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:95:27-74
+activity#com.ezhealthtrack.EzLaunchActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:98:9-101:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:100:13-61
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:101:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:99:13-45
+activity#com.ezhealthtrack.activity.DashboardActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:102:9-105:66
+	android:windowSoftInputMode
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:105:13-54
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:104:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:103:13-55
+activity#com.ezhealthtrack.activity.AddPatientActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:106:9-110:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:108:13-63
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:109:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:110:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:107:13-56
+activity#com.ezhealthtrack.activity.SheduleActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:111:9-115:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:114:13-59
+	android:configChanges
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:113:13-59
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:115:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:112:13-53
+activity#com.ezhealthtrack.activity.SheduleActivityNew
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:116:9-120:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:118:13-59
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:119:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:120:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:117:13-56
+activity#com.ezhealthtrack.activity.AddVisitNotesActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:121:9-125:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:123:13-67
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:124:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:125:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:122:13-59
+activity#com.ezhealthtrack.DentistSoap.AddDentistNotesActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:126:9-130:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:128:13-67
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:129:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:130:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:127:13-64
+activity#com.ezhealthtrack.activity.AddVitalsActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:131:9-135:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:133:13-62
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:134:13-73
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:135:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:132:13-55
+activity#com.ezhealthtrack.activity.LabOrderActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:136:9-140:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:138:13-61
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:139:13-73
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:140:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:137:13-54
+activity#com.ezhealthtrack.activity.RadiologyActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:141:9-145:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:143:13-62
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:144:13-73
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:145:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:142:13-55
+activity#com.ezhealthtrack.DentistSoap.DentistRadiologyActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:146:9-150:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:148:13-38
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:149:13-78
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:150:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:147:13-65
+activity#com.ezhealthtrack.DentistSoap.DentistLabOrderActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:151:9-155:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:153:13-32
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:154:13-78
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:155:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:152:13-64
+activity#com.ezhealthtrack.DentistSoap.DentistTreatmentPlanActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:156:9-160:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:158:13-43
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:159:13-78
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:160:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:157:13-69
+activity#com.ezhealthtrack.DentistSoap.MasterTreatmentPlanActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:161:9-165:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:163:13-43
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:164:13-78
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:165:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:162:13-68
+activity#com.ezhealthtrack.activity.AddPrescriptionActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:166:9-170:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:168:13-41
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:169:13-78
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:170:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:167:13-61
+activity#com.ezhealthtrack.DentistSoap.DentistToothwiseMasterPlanActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:171:9-174:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:173:13-39
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:174:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:172:13-75
+activity#com.ezhealthtrack.activity.PrevVisitsActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:175:9-179:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:177:13-40
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:178:13-78
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:179:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:176:13-56
+activity#com.ezhealthtrack.DentistSoap.PastDentistNotesActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:180:9-184:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:182:13-47
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:183:13-70
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:184:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:181:13-65
+activity#com.ezhealthtrack.DentistSoap.ReferDentistNotesActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:185:9-189:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:187:13-48
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:188:13-78
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:189:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:186:13-66
+activity#com.ezhealthtrack.physiciansoap.PhysicianSoapActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:190:9-194:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:192:13-67
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:193:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:194:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:191:13-64
+activity#com.ezhealthtrack.physiciansoap.RadiologyActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:195:9-199:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:197:13-38
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:198:13-78
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:199:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:196:13-60
+activity#com.ezhealthtrack.physiciansoap.LabOrderActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:200:9-204:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:202:13-32
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:203:13-78
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:204:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:201:13-59
+activity#com.ezhealthtrack.physiciansoap.PastPhysicianSoapActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:205:9-209:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:207:13-39
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:208:13-70
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:209:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:206:13-68
+activity#com.ezhealthtrack.physiciansoap.ReferPhysicianSoapActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:210:9-214:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:212:13-40
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:213:13-70
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:214:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:211:13-69
+activity#com.ezhealthtrack.activity.EditAssistantActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:215:9-219:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:217:13-43
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:218:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:219:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:216:13-59
+activity#com.ezhealthtrack.activity.EditAccountActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:220:9-225:67
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:222:13-41
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:223:13-69
+	android:windowSoftInputMode
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:225:13-55
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:224:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:221:13-57
+activity#com.ezhealthtrack.activity.PrescriptionActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:226:9-230:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:229:13-41
+	android:configChanges
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:228:13-59
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:230:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:227:13-58
+activity#com.ezhealthtrack.activity.UpdatePatientActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:231:9-234:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:233:13-43
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:234:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:232:13-59
+activity#com.ezhealthtrack.labs.activity.LabsDashboardActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:235:9-238:69
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:237:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:238:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:236:13-64
+activity#com.ezhealthtrack.labs.activity.LabsOrderCreateActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:239:9-242:69
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:241:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:242:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:240:13-66
+activity#com.ezhealthtrack.labs.activity.LabsOrderUpdateActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:243:9-246:69
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:245:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:246:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:244:13-66
+activity#com.ezhealthtrack.labs.activity.LabsOrderDetailsActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:247:9-250:69
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:249:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:250:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:248:13-67
+activity#com.ezhealthtrack.labs.activity.LabsOrderReportDetailsActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:251:9-254:69
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:253:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:254:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:252:13-73
+activity#com.ezhealthtrack.labs.activity.LabsOrderSuccessActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:255:9-258:69
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:257:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:258:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:256:13-67
+activity#com.ezhealthtrack.labs.activity.LabsBillPaymentActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:259:9-262:69
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:261:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:262:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:260:13-66
+activity#com.ezhealthtrack.labs.activity.LabsBillPaymentHistoryActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:263:9-266:69
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:265:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:266:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:264:13-73
+activity#com.ezhealthtrack.labs.activity.LabsReportValuesActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:267:9-270:69
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:269:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:270:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:268:13-67
+activity#com.ezhealthtrack.labs.activity.LabsReportValuesViewActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:271:9-274:69
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:273:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:274:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:272:13-71
+activity#com.ezhealthtrack.labs.activity.LabsBillRefundActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:275:9-278:69
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:277:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:278:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:276:13-65
+activity#com.orleonsoft.android.simplefilechooser.ui.FileChooserActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:279:9-281:69
+MERGED from [EzHealthTrackApp:fileChooserActivity:unspecified] C:\Workspace\EzHealthTrackApp\fileChooserActivity\build\intermediates\bundles\default\AndroidManifest.xml:19:9-23:20
+	android:screenOrientation
+		ADDED from [EzHealthTrackApp:fileChooserActivity:unspecified] C:\Workspace\EzHealthTrackApp\fileChooserActivity\build\intermediates\bundles\default\AndroidManifest.xml:22:13-49
+	android:label
+		ADDED from [EzHealthTrackApp:fileChooserActivity:unspecified] C:\Workspace\EzHealthTrackApp\fileChooserActivity\build\intermediates\bundles\default\AndroidManifest.xml:21:13-45
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:281:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:280:13-91
+activity#com.ezhealthtrack.activity.ComposeMessageActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:282:9-286:67
+	android:windowSoftInputMode
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:286:13-55
+	android:configChanges
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:284:13-59
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:285:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:283:13-60
+activity#com.ezhealthtrack.activity.LabOrderDetailsActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:287:9-291:60
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:290:13-69
+	android:configChanges
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:289:13-59
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:291:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:288:13-61
+activity#com.ezhealthtrack.gallery.GalleryViewActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:292:9-296:74
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:294:13-64
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:295:13-69
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:296:13-71
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:293:13-73
+activity#com.ezhealthtrack.gallery.PhotoViewActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:297:9-301:74
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:299:13-62
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:300:13-71
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:301:13-71
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:298:13-71
+activity#com.ezhealthtrack.gallery.PostPhotoActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:302:9-306:74
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:305:13-62
+	android:configChanges
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:304:13-59
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:306:13-71
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:303:13-71
+activity#com.ezhealthtrack.physiciansoap.PhysicianSOAPNotesViewActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:307:9-311:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:309:13-49
+	android:parentActivityName
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:310:13-70
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:311:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:308:13-73
+activity#com.ezhealthtrack.print.PrintPrescriptionActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:312:9-315:60
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:314:13-42
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:315:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:313:13-60
+activity#com.ezhealthtrack.print.PrintLabOrderedActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:316:9-319:60
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:318:13-42
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:319:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:317:13-58
+activity#com.ezhealthtrack.print.PrintRadiologyOrderedActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:320:9-323:60
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:322:13-42
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:323:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:321:13-64
+activity#com.ezhealthtrack.print.PrintAllInvestigationActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:324:9-327:60
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:326:13-42
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:327:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:325:13-64
+activity#com.ezhealthtrack.physiciansoap.PhysicianSoapMiniActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:328:9-332:60
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:331:13-44
+	android:configChanges
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:330:13-59
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:332:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:329:13-68
+activity#com.ezhealthtrack.physiciansoap.PhysicianSoapActivityMain
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:333:9-337:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:336:13-49
+	android:configChanges
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:335:13-59
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:337:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:334:13-68
+activity#com.ezhealthtrack.print.PrintAllLabReportsActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:338:9-341:60
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:340:13-42
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:341:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:339:13-61
+activity#com.ezhealthtrack.print.PrintLabReportActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:342:9-345:60
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:344:13-42
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:345:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:343:13-57
+activity#com.ezhealthtrack.activity.ScheduleActivityDemo
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:346:9-350:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:349:13-59
+	android:configChanges
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:348:13-59
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:350:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:347:13-58
+activity#com.ezhealthtrack.activity.ScheduleActivityDemo_Weekly
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:351:9-354:69
+	android:configChanges
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:353:13-59
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:354:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:352:13-65
+activity#com.ezhealthtrack.activity.ScheduleActivityDemo_Daily
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:355:9-358:69
+	android:configChanges
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:357:13-59
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:358:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:356:13-64
+activity#com.ezhealthtrack.templates.physiotherapist.WebPageActivity
+ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:359:9-362:69
+	android:label
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:361:13-39
+	android:theme
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:362:13-57
+	android:name
+		ADDED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:360:13-70
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from C:\Workspace\EzHealthTrackApp\ezHealthTrackApp\src\main\AndroidManifest.xml:5:1-365:12 reason: com.orleonsoft.android.simplefilechooser requested WRITE_EXTERNAL_STORAGE
+activity#com.todddavies.components.progressbar.main
+ADDED from [EzHealthTrackApp:progresswheel:unspecified] C:\Workspace\EzHealthTrackApp\progresswheel\build\intermediates\bundles\default\AndroidManifest.xml:15:9-18:20
+	android:label
+		ADDED from [EzHealthTrackApp:progresswheel:unspecified] C:\Workspace\EzHealthTrackApp\progresswheel\build\intermediates\bundles\default\AndroidManifest.xml:17:13-45
+	android:name
+		ADDED from [EzHealthTrackApp:progresswheel:unspecified] C:\Workspace\EzHealthTrackApp\progresswheel\build\intermediates\bundles\default\AndroidManifest.xml:16:13-70
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sareen\.android\build-cache\846cbf57511a13ba82c1da3883e328c8aed38786\output\AndroidManifest.xml:26:9-29:64
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sareen\.android\build-cache\846cbf57511a13ba82c1da3883e328c8aed38786\output\AndroidManifest.xml:28:13-122
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sareen\.android\build-cache\846cbf57511a13ba82c1da3883e328c8aed38786\output\AndroidManifest.xml:29:13-61
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sareen\.android\build-cache\846cbf57511a13ba82c1da3883e328c8aed38786\output\AndroidManifest.xml:27:13-65
+activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
+ADDED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sareen\.android\build-cache\846cbf57511a13ba82c1da3883e328c8aed38786\output\AndroidManifest.xml:30:9-31:52
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sareen\.android\build-cache\846cbf57511a13ba82c1da3883e328c8aed38786\output\AndroidManifest.xml:31:13-50
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sareen\.android\build-cache\846cbf57511a13ba82c1da3883e328c8aed38786\output\AndroidManifest.xml:30:19-91
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from [com.google.android.gms:play-services-wallet:7.8.0] C:\Users\Sareen\.android\build-cache\7a5b63114ff39d7563498fcb0a7ab914953214f4\output\AndroidManifest.xml:22:5-73
+	android:name
+		ADDED from [com.google.android.gms:play-services-wallet:7.8.0] C:\Users\Sareen\.android\build-cache\7a5b63114ff39d7563498fcb0a7ab914953214f4\output\AndroidManifest.xml:22:22-71
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sareen\.android\build-cache\45945abb8b0262fb21f466f39988b8a85ea42489\output\AndroidManifest.xml:23:5-25:33
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sareen\.android\build-cache\45945abb8b0262fb21f466f39988b8a85ea42489\output\AndroidManifest.xml:24:8-40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sareen\.android\build-cache\45945abb8b0262fb21f466f39988b8a85ea42489\output\AndroidManifest.xml:25:8-31
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sareen\.android\build-cache\5e9027168c0594138e7f9aa98b6769fb4fd32278\output\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sareen\.android\build-cache\5e9027168c0594138e7f9aa98b6769fb4fd32278\output\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sareen\.android\build-cache\5e9027168c0594138e7f9aa98b6769fb4fd32278\output\AndroidManifest.xml:22:13-58

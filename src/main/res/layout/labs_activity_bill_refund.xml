@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".OrderCreateActivity" >
+
+    <TextView
+        android:id="@+id/txt_bill_refund"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="Bill Refund"
+        android:textColor="#9AB8D8"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rl_patient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_bill_refund"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_blue_round"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Patient :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_name_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_name"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txt_order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Order Date :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_order_date_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_order_date"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txt_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_order_date"
+            android:text="Order :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_order_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_order"
+            android:text=""
+            android:textColor="#82CAFA"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txt_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Order Status :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_order_status_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_order_status"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txt_bill_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_order_date"
+            android:layout_marginLeft="464dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_order_status"
+            android:text="Bill Status :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_bill_status_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_order_date"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_bill_status"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txt_bill_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_order"
+            android:layout_marginLeft="302dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_bill_status"
+            android:text="Bill Id :"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_bill_id_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_order"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_bill_id"
+            android:text=""
+            android:textColor="#82CAFA"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_due"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_patient"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/txt_amount_due"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Amount Due:"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_rupee"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/txt_amount_due"
+            android:src="@drawable/rupee" />
+
+        <TextView
+            android:id="@+id/txt_amount_due_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_rupee"
+            android:text="200"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txt_original_amount_due"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_toRightOf="@+id/txt_amount_due"
+            android:text="Original Amount Due:"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_rupee_1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/txt_original_amount_due"
+            android:src="@drawable/rupee" />
+
+        <TextView
+            android:id="@+id/txt_original_amount_due_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_rupee_1"
+            android:text="500"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txt_payment_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_toRightOf="@+id/txt_original_amount_due"
+            android:text="Payment History"
+            android:textColor="#82CAFA"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_due"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="40dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_actual_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txt_payable_balance_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Payable Balance Amount :"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_refund_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_payable_balance_amount"
+                android:layout_marginTop="10dp"
+                android:text="Refund Amount :"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_balance_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_refund_amount"
+                android:layout_marginTop="10dp"
+                android:text="Balance Amount :"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_payment_method"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_balance_amount"
+                android:layout_marginTop="10dp"
+                android:text="Payment Method :"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_payment_method"
+                android:layout_marginTop="10dp"
+                android:text="Notes :"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_actual_amount_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/rl_actual_amount" >
+
+            <ImageView
+                android:id="@+id/img_rupee_5"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/rupee" />
+
+            <TextView
+                android:id="@+id/txt_payable_balance_amount_display"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/img_rupee_5"
+                android:background="@drawable/edit_text_disabled_bg"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/img_rupee_6"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/img_rupee_5"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/rupee" />
+
+            <EditText
+                android:id="@+id/edit_refund_amount"
+                style="@style/SingleLineEditText"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_payable_balance_amount_display"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/img_rupee_6"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/img_rupee_7"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/img_rupee_6"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/rupee" />
+
+            <TextView
+                android:id="@+id/txt_balance_amount_display"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edit_refund_amount"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/img_rupee_7"
+                android:background="@drawable/edit_text_disabled_bg"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:id="@+id/spinner_payment_method"
+                style="@style/Spinner"
+                android:layout_width="315dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_balance_amount_display"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/edit_notes"
+                style="@style/SingleLineEditText"
+                android:layout_width="315dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/spinner_payment_method"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:hint="Notes"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rl_scroll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_grey"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+</RelativeLayout>

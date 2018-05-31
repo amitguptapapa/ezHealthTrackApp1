@@ -1,0 +1,430 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_dentist_lab_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".LabOrderActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginTop="10dp"
+            android:background="#777777" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_main"
+        android:padding="15dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/cb_sugar"
+                android:layout_width="450dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:tag="bs"
+                android:text="Blood Sugar"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_fasting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cb_sugar"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/txt_fasting"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="Fasting"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/txt_fasting"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:tag="fast"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_random"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_fasting"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/txt_random"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="Random"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/txt_random"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:tag="rand"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_haemo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_random"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" >
+
+                <CheckBox
+                    android:id="@+id/cb_haemoglobin"
+                    android:layout_width="450dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:tag="haem"
+                    android:text="Haemoglobin"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/cb_haemoglobin"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:tag="Haemoglobin"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_haemo"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" >
+
+                <CheckBox
+                    android:id="@+id/cb_comp_blood_count"
+                    android:layout_width="450dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:tag="cbc"
+                    android:text="Complete Blood Count"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/cb_comp_blood_count"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:tag="Complete Blood Count"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_leuko_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_count"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" >
+
+                <CheckBox
+                    android:id="@+id/cb_totleukocyte"
+                    android:layout_width="450dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:tag="tlc"
+                    android:text="Total Leukocyte Count"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/cb_totleukocyte"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:tag="Total Leukocyte count"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_diff_leuko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_leuko_count"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" >
+
+                <CheckBox
+                    android:id="@+id/cb_diff_leukocyte"
+                    android:layout_width="450dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:tag="dlc"
+                    android:text="Differential  Leukocyte Count"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/cb_diff_leukocyte"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:tag="Differential  Leukocyte count"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_rbc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_diff_leuko"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" >
+
+                <CheckBox
+                    android:id="@+id/cb_rbc"
+                    android:layout_width="450dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:tag="rbcc"
+                    android:text="RBC Count"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/cb_rbc"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:tag="RBC Count"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_platelet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_rbc"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" >
+
+                <CheckBox
+                    android:id="@+id/cb_platelet"
+                    android:layout_width="450dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:tag="pc"
+                    android:text="Platelet Count"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/cb_platelet"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:tag="Platelet count"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/cb_histopathological"
+                android:layout_width="450dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/rl_platelet"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:tag="he"
+                android:text="Histopathological Examination"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cb_histopathological"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" >
+
+                <CheckBox
+                    android:id="@+id/cb_biopsy"
+                    android:layout_width="400dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="80dp"
+                    android:gravity="center_vertical"
+                    android:tag="biop"
+                    android:text="Biopsy"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/cb_biopsy"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:tag="Biopsy"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_others"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_bio"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/cb_others"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="Note"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_others"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/cb_others"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:tag="othe"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_doc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/rl_others"
+                android:layout_margin="5dp" >
+
+                <TableLayout
+                    android:id="@+id/table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#000000"
+                    android:padding=".5dp" >
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/btn_upload"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/table"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="500dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_blue"
+                    android:text="Upload Option"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/table"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/btn_upload"
+                    android:background="@drawable/btn_blue"
+                    android:text="Save"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

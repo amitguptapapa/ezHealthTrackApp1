@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="12dp" >
+
+    <include
+        android:id="@+id/id_header"
+        layout="@layout/ez_dialog_header" >
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id_footer"
+        android:layout_below="@+id/id_header" >
+
+        <TextView
+            android:id="@+id/txt_vitals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_window"
+            android:padding="12dp"
+            android:text="Vitals"
+            android:textColor="@color/textNormal"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <include
+        android:id="@+id/id_footer"
+        layout="@layout/ez_dialog_footer" >
+    </include>
+
+</RelativeLayout>

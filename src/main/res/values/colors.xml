@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="textDarker">#232323</color>
+    <color name="textDark">#323232</color>
+    <color name="textNormal">#464646</color>
+    <color name="textLight">#646464</color>
+    <color name="textLighter">#828282</color>
+    <color name="linkColor">#0000FF</color>
+    <color name="accent_color_light">#33B5E5</color>
+    <color name="HeaderBg">#efefef</color>
+    <color name="TextBlue">#9AB8D8</color>
+    <color name="bg_window">#eaecf0</color>
+    <color name="lightblue">#eaecf0</color>
+    <color name="main.title.bg">#666666</color>
+    <color name="main.title.textColor">#ffffff</color>
+    <color name="ezHeaderBg">#f8f8f8</color>
+    <color name="ezHeaderTextColor">#33B5E5</color>
+    <color name="cyanLight">#33b5e5</color>
+    <color name="cyan">#0099cc</color>
+    <color name="available_slot">#ABA2FF</color>
+
+    <color name="colorPrimary">#3097B5</color>
+    <color name="colorPrimaryDark">#226C81</color>
+    <color name="colorAccent">#226C81</color>
+
+</resources>

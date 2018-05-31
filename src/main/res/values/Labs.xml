@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="BillPaymentHistory">Bill Payment History</string>
+    <string name="Patient">Patient :</string>
+    <string name="OrderDate">Order Date :</string>
+    <string name="Order">Order :</string>
+    <string name="OrderStatus">Order Status :</string>
+    <string name="BillStatus">Bill Status :</string>
+    <string name="BillId">Bill Id :</string>
+    <string name="Date">Date</string>
+    <string name="PaymentMethod">Payment Method</string>
+    <string name="AmountPaid">Amount Paid</string>
+    <string name="AmountRefund">Amount Refund</string>
+    <string name="TotalLabTestAmount">Total Lab Test Amount :</string>
+    <string name="PayableAmount">Payable Amount :</string>
+    <string name="TotalPaid">Total Paid :</string>
+    <string name="TotalRefund">Total Refund :</string>
+    <string name="Balance">Balance :</string>
+    <string name="MakePayment">Make Payment</string>
+    <string name="PrintBill">Print Bill</string>
+    <string name="Refund">Refund</string>
+    <string name="Zero">0.00</string>
+    <string name="BillPayment">Bill Payment</string>
+    <string name="AmountDue">Amount Due:</string>
+    <string name="PaymentHistory">Payment History</string>
+    <string name="TotalAmount">Total Amount :</string>
+    <string name="Discount">Discount @ :</string>
+    <string name="Tax">Tax @ 0.00 % :</string>
+    <string name="PayingAmount">Paying Amount :</string>
+    <string name="BalanceAmount">Balance Amount :</string>
+    <string name="Notes">Notes :</string>
+    <string name="percent">%</string>
+    <string name="Submit">Submit</string>
+    <string name="OriginalAmountDue">Original Amount Due:</string>
+    <string name="NetAmount">Net Amount :</string>
+
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="12dp" >
+
+    <include
+        android:id="@+id/id_header"
+        layout="@layout/ez_dialog_header" >
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_header" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_window"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/txt_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edit_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_desc"
+                android:layout_marginTop="5dp"
+                android:background="#ffffff"
+                android:gravity="start"
+                android:hint="Reason"
+                android:inputType="textMultiLine"
+                android:minHeight="100dp"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_cond1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_reason"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="* Reminder for confirmed appointments will be send within 24 hours prior to the appointment. "
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_cond2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_cond1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:text="* Cancellation less than 24 hrs before appointment will not be allowed."
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_close"
+                style="@style/EzButtonSmall"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/txt_cond2"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_toLeftOf="@+id/btn_schedule"
+                android:background="@drawable/button_popup_close"
+                android:text="Close"
+                android:textColor="@color/textDarker" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_schedule"
+                style="@style/EzButtonSmall"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txt_cond2"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button_cyan"
+                android:text="" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

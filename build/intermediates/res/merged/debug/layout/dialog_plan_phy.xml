@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txt_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_diagnosis"
+                android:layout_marginTop="15dp"
+                android:background="@color/HeaderBg"
+                android:padding="10dp"
+                android:text="@string/Plan"
+                android:textColor="@color/TextBlue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_plan"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/txt_radiology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:padding="5dp"
+                    android:text="Radiology : "
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TableLayout
+                    android:id="@+id/table"
+                    android:layout_width="1055dp"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    android:padding="0.5dp" >
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/txt_lab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Lab Order :"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TableLayout
+                    android:id="@+id/table_lab"
+                    android:layout_width="1055dp"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    android:padding="0.5dp" >
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/txt_ekg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="EKG/ECG :"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:id="@+id/table_ekg"
+                    android:layout_width="1055dp"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    android:padding="0.5dp" >
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/txt_prescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="5dp"
+                    android:text="Prescription :"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TableLayout
+                    android:id="@+id/table_prescription"
+                    android:layout_width="1200dp"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    android:padding="0.5dp"
+                    android:visibility="gone" >
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/txt_special_instruction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="5dp"
+                    android:text="Special Instruction : "
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_treatment_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:text="Treatment Plan"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/edit_tp"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_below="@+id/txt"
+                        android:background="@drawable/edit_text_disabled_bg"
+                        android:gravity="start"
+                        android:inputType="textMultiLine"
+                        android:padding="10dp"
+                        android:tag="tp"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_allergy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="5dp"
+                    android:text="Allergy :"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="5dp"
+                    android:text="Private Notes"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_private_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@drawable/edit_text_disabled_bg"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/txt_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/close"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

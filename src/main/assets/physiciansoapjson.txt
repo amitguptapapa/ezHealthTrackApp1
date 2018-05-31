@@ -1,0 +1,101 @@
+{
+    "template_id": "soap_physician_v1",
+    "user_id": "169",
+    "encounter_id": "420",
+    "episode_id": "67",
+    "Soap": {
+      "subj": {
+        "cc": {
+          "value": "headache"
+        },
+        "hp": {
+          "hpi": {
+            "value": ""
+          },
+          "pmh": {
+            "value": ""
+          },
+          "fh": {
+            "value": ""
+          },
+          "ph": {
+            "value": ""
+          },
+          "dha": {
+            "value": ""
+          },
+          "note": {
+            "value": ""
+          }
+        }
+      },
+      "obje": {
+        "vita": {
+          "bp": {
+            "value": ""
+          },
+          "puls": {
+            "value": ""
+          },
+          "rr": {
+            "value": ""
+          },
+          "temp": {
+            "value": ""
+          },
+          "note": {
+            "value": ""
+          }
+        },
+        "symp": {
+          "value": ""
+        },
+        "ge": {
+          "value": ""
+        },
+        "se": {
+          "value": ""
+        },
+        "note": {
+          "value": ""
+        }
+      },
+      "asse": {
+        "pd": {
+          "value": "[]"
+        },
+        "fd": {
+          "value": "[]"
+        }
+      },
+      "plan": {
+        "tp": {
+          "value": ""
+        },
+        "td": {
+        },
+        "pres": {
+          "si": {
+            "value": ""
+          }
+        },
+        "alle": {
+          "mc": "--SELECT--",
+          "ai": {
+            "value": ""
+          },
+          "sc": ""
+        },
+        "ecg": "off",
+        "lab": {
+        },
+        "radi": {
+        }
+      },
+      "private-note": {
+        "value": "",
+        "status": "Pr",
+        "SType": ""
+      }
+    }
+}

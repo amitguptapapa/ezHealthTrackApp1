@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE" >
+
+    <TextView
+        android:id="@+id/txt_lab_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="Lab Order"
+        android:textColor="#9AB8D8"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scroll_main"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/txt_lab_order" >
+
+        <RelativeLayout
+            android:id="@+id/rl_print"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_lab_info"
+                style="@style/SingleLineEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/txt_lab_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="#008080"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_lab_motto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_lab_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_lab_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_lab_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/img_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_lab_address"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/phn" />
+
+                <TextView
+                    android:id="@+id/txt_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_lab_address"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/img_phone"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/img_phone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_phone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/phn"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_landline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_phone"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_phone"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_lab"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/labphoto" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_patient_info"
+                style="@style/SingleLineEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_lab_info"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/txt_patient_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_patient_address"
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_patient_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_patient_address"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Doctor"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_doctor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_doctor"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_lab_order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Lab Order Id :"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_lab_order_id_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/txt_lab_order_id"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_lab_order_id"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Date :"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_date_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_lab_order_id"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/txt_date"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_prepared_by"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_date"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Order Prepared By"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_prepared_by_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_prepared_by"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_main"
+                style="@style/SingleLineEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_patient_info"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="5dp" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_test_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txt_test_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Test Name"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="200dp"
+                        android:layout_toRightOf="@+id/txt_test_name"
+                        android:text="Type"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="250dp"
+                        android:layout_toRightOf="@+id/txt_type"
+                        android:text="Quantity"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="150dp"
+                        android:layout_toRightOf="@+id/txt_quantity"
+                        android:text="Price"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/view_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/txt_price"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="3dp"
+                        android:background="#000000" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_test_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_test_name"
+                    android:minHeight="100dp"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_test_name"
+                    android:layout_marginLeft="576dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Discount @ 10.00 %"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_rupee_9"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@+id/ll_test_name"
+                    android:layout_marginLeft="66dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_toRightOf="@+id/txt_discount"
+                    android:src="@drawable/rupee"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_discount_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_test_name"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/img_rupee_9"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_tax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_discount"
+                    android:layout_marginLeft="576dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Tax @ 10.00 %"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_rupee_19"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@+id/txt_discount"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_toRightOf="@+id/txt_tax"
+                    android:src="@drawable/rupee"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_tax_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_discount"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/img_rupee_19"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_tax"
+                    android:layout_marginLeft="576dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Total"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/img_rupee"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@+id/txt_tax"
+                    android:layout_marginLeft="169dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_toRightOf="@+id/txt_total"
+                    android:src="@drawable/rupee" />
+
+                <TextView
+                    android:id="@+id/txt_total_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_tax"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/img_rupee"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/img_lab_signature"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/txt_total"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/txt_tech_signature_display"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_lab_signature"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <View
+                    android:id="@+id/view_line_3"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txt_total"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_toRightOf="@+id/img_lab_signature"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/txt_customer_signature_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_line_3"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/txt_tech_signature_display"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_print"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/scroll_main"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_grey"
+        android:padding="5dp"
+        android:text="Print"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/txt_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/close"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

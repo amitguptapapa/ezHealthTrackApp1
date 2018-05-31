@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="ButtonStyle">
+        <ignore path="res/layout/row_patients_card.xml" />
+    </issue>
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="HardcodedText" severity="ignore">
+        <ignore path="res/layout/activity_lab_order_details.xml" />
+        <ignore path="res/menu/menu_gallery_photo_view.xml" />
+        <ignore path="res/menu/menu_upload_gallery_image.xml" />
+    </issue>
+    <issue id="InnerclassSeparator">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
+    <issue id="LabelFor" severity="ignore" />
+    <issue id="RtlHardcoded" severity="ignore" />
+    <issue id="RtlSymmetry" severity="ignore" />
+    <issue id="SimpleDateFormat" severity="ignore" />
+</lint>

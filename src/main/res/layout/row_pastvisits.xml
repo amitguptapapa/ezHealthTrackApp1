@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_blue_round"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/txt_confirmed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            android:text="Abhishek Goyal has an appointment @9:00 am on Thu, Jan 30, 2014 for &quot;High Fever&quot; "
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

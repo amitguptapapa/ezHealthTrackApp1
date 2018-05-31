@@ -1,0 +1,817 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <View
+        android:id="@+id/view_center"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txt_masterplan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Treatment Plan"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/rg_masterplan_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+        <CheckBox
+            android:id="@+id/cb_cd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_cd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complete Denture"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cb_tw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_tw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tooth Wise"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cb_scal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="scal"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_scal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scaling"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cb_othe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_othe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_comp_denture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rg_masterplan_type"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/list_comp_denture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#00000000" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+
+            <TableLayout
+                android:id="@+id/table_comp_denture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="#eeeeee"
+                android:padding="5dp" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_scaling_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rg_masterplan_type"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:text="Choose Scaling Type"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_scaling"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:layout_weight="1"
+                android:tag="Partial"
+                android:text="@string/partial"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_weight="1"
+                android:tag="Complete"
+                android:text="@string/complete"
+                android:textSize="16sp" />
+        </RadioGroup>
+        
+        <TextView
+            android:id="@+id/txt_scaling_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:text="Scaling Master Plan"
+            android:visibility="gone"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+        
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableLayout
+                android:id="@+id/table_scale_type"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:padding="5dp" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_other_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rg_masterplan_type"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:padding="10dp"
+            android:text="Define own treatment plan"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+        <CheckBox
+            android:id="@+id/cb_mark_others_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+			android:layout_gravity="right"
+            android:padding="10dp"
+            android:text="Mark as this appointment task"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_other_type"
+            android:tag="othe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:gravity="start"
+            android:hint="@string/others"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <com.ezhealthtrack.views.TeethView
+        android:id="@+id/toothimage"
+        android:layout_width="900dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/txt_masterplan"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_complete_denture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toothimage"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/txt_tooth_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:background="#eeeeee"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:layout_alignTop="@+id/txt_tooth_state"
+            android:layout_alignBottom="@+id/txt_tooth_state"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_tooth_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:layout_toRightOf="@+id/rg_teeth_selection"
+            android:background="#eeeeee"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_teeth_selection"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_tooth_name"
+            android:background="#eeeeee"
+            android:orientation="horizontal"
+            android:layout_alignBottom="@+id/txt_tooth_state"
+            android:layout_alignTop="@+id/txt_tooth_state"
+            android:visibility="gone" >
+
+            <RadioButton
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:tag="@string/localized"
+                android:text="Tooth11"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:tag="@string/generalized"
+                android:text="Tooth51"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/ll_dentist_treatment_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_tooth_name"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/ll_teeth_plan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <CheckBox
+                        android:id="@+id/cb_restoration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/restoration"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_restoration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <CheckBox
+                            android:id="@+id/cb_ionnomer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="@string/glass_ionomer_cement"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_cement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="@string/composite"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/edit_restoration_other"
+                            android:layout_width="300dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:hint="@string/others"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/cb_extraction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/extraction"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_root_canal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/root_canal_treatment"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_scaling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/scaling"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_scaling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <RadioGroup
+                            android:id="@+id/rg_scaling_1"
+                            android:layout_width="300dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:tag="@string/partial"
+                                android:text="@string/partial"
+                                android:textSize="16sp" />
+
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:tag="@string/complete"
+                                android:text="@string/complete"
+                                android:textSize="16sp" />
+                        </RadioGroup>
+
+                        <RadioGroup
+                            android:id="@+id/rg_scaling_2"
+                            android:layout_width="300dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:orientation="horizontal"
+                          >
+
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:tag="@string/localized"
+                                android:text="@string/localized"
+                                android:textSize="16sp" />
+
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:tag="@string/generalized"
+                                android:text="@string/generalized"
+                                android:textSize="16sp" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/cb_crown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/crown"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_crown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <RadioButton
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:tag="@string/all_metal"
+                            android:text="@string/all_metal"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:tag="@string/metal_ceramic"
+                            android:text="@string/metal_ceramic"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:tag="@string/all_ceramic"
+                            android:text="@string/all_ceramic"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:tag="@string/others"
+                            android:text="@string/others"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+
+                    <CheckBox
+                        android:id="@+id/cb_bridge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/bridge"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_rem_par_denture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/removable_partial_denture"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_rem_comp_denture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/removable_complete_denture"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_fix_comp_denture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/fixed_complete_denture"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/ll_common_plan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <CheckBox
+                        android:id="@+id/cb_implants_others"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/implants_others"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_impction_surgery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/impaction_surgery"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_oral_maxillo_surgery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/oral_and_maxillofacial_surgery"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_oral_maxillo_surgery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <CheckBox
+                            android:id="@+id/txt_oral_rem_lesion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="@string/removal_of_the_lesion"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_oral_rem_lesion"
+                            android:layout_width="300dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:tag="@string/partial"
+                                android:text="@string/partial"
+                                android:textSize="16sp" />
+
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:tag="@string/complete"
+                                android:text="@string/complete"
+                                android:textSize="16sp" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/cb_periodontal_surgery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/periodontal_surgery"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_peridontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <CheckBox
+                            android:id="@+id/cb_gingivoplasty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="@string/gingivoplasty"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_gingivectomy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="@string/gingivectomy"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_osteoplasty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="@string/osteoplasty"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_ostectomy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="@string/ostectomy"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_mod_wid_flap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="@string/modified_widman_flap"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_api_dis_flap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="@string/apically_displaced_flap"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_pal_flap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="@string/palatal_flap"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_undis_flap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="@string/undisplaced_flap"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_pap_pres_flap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="@string/papilla_preservation_flap"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_dou_pap_flap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="@string/double_papilla_flap"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_dis_mol_surg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="@string/distal_molar_surgery"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/edit_peridontal"
+                            android:layout_width="300dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="100dp"
+                            android:hint="@string/others"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/cb_aspiration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/aspiration"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_debridgement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/debridement"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_suturing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/suturing"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edit_other"
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:hint="@string/others"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:id="@+id/ll_tooth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/txt_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Note"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_blue_round"
+                        android:orientation="horizontal"
+                        android:padding="15dp" >
+
+                        <EditText
+                            android:id="@+id/edit_note"
+                            android:tag="note"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="#99000000"
+        android:text="Close"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

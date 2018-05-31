@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_compose_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="@dimen/screen_right_margin"
+    android:background="@color/white" >
+
+    <ScrollView
+        android:id="@+id/scroll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/inner_padding_content" >
+
+        <RelativeLayout
+            android:id="@+id/rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <include
+                android:id="@+id/id_header"
+                layout="@layout/ez_header_filter_count" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_header"
+                android:layout_marginLeft="@dimen/inner_padding_content"
+                android:layout_marginRight="@dimen/inner_padding_content" >
+
+                <com.ezhealthtrack.views.ChipsMultiAutoCompleteTextview
+                    android:id="@+id/actv_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/inner_padding"
+                    android:hint="Add recipients"
+                    android:minHeight="40dp"
+                    android:padding="12dp"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_all_patients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/actv_to"
+                    android:paddingRight="@dimen/inner_padding_content"
+                    android:text="Send to all patients"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cb_all_patients" >
+
+                    <EditText
+                        android:id="@+id/edit_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:hint="Message subject"
+                        android:maxLength="120"
+                        android:minHeight="40dp"
+                        android:padding="@dimen/inner_padding"
+                        android:textColor="@color/textNormal"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_subject_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edit_subject"
+                        android:layout_toLeftOf="@+id/txt_subject_count_display"
+                        android:paddingRight="@dimen/inner_padding"
+                        android:text="Remaining characters:"
+                        android:textColor="@color/textLight"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txt_subject_count_display"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/edit_subject"
+                        android:text="120"
+                        android:textColor="#FF0000"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/edit_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_subject_count_display"
+                        android:gravity="top"
+                        android:hint="Message / Email body"
+                        android:minLines="3"
+                        android:padding="@dimen/inner_padding"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_sms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_mail" >
+
+                    <EditText
+                        android:id="@+id/edit_sms_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:hint="Write a short message"
+                        android:maxLength="120"
+                        android:minLines="3"
+                        android:padding="@dimen/inner_padding"
+                        android:textColor="@color/textNormal"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_sms_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edit_sms_body"
+                        android:layout_toLeftOf="@+id/txt_sms_count_display"
+                        android:paddingRight="@dimen/inner_padding"
+                        android:text="Remaining characters:"
+                        android:textColor="@color/textNormal"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txt_sms_count_display"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/edit_sms_body"
+                        android:text="120"
+                        android:textColor="#FF0000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_sms_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/rl_sms"
+                    android:text="* You may incur the SMS charges."
+                    android:textColor="@color/textNormal"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_send"
+                    style="@style/EzButtonNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/txt_sms_alert"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/inner_padding_content"
+                    android:background="@drawable/button_blue"
+                    android:onClick="actionSendMessage"
+                    android:paddingLeft="@dimen/inner_padding_content"
+                    android:paddingRight="@dimen/inner_padding_content"
+                    android:text="Send" />
+
+                <!-- <Button -->
+                <!-- android:id="@+id/btn_cancel" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_marginLeft="10dp" -->
+                <!-- android:layout_toRightOf="@+id/btn_send" -->
+                <!-- android:background="@drawable/btn_grey" -->
+                <!-- android:padding="5dp" -->
+                <!-- android:text="Cancel" -->
+                <!-- android:textColor="#FFFFFF" -->
+                <!-- android:textSize="15sp" /> -->
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

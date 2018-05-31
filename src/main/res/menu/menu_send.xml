@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:com.ezhealthtrack="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/id_send"
+        android:icon="@drawable/ic_action_send"
+        android:orderInCategory="4"
+        android:title="Send"
+        android:visible="false"
+        com.ezhealthtrack:showAsAction="ifRoom"/>
+
+</menu>

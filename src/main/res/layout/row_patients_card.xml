@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="6dp" >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#f8f8f8"
+        card_view:cardCornerRadius="1dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:contentPadding="0dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/id_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/inner_padding" >
+
+                <ImageView
+                    android:id="@+id/img_patient"
+                    android:layout_width="@dimen/img_size_avatar"
+                    android:layout_height="@dimen/img_size_avatar"
+                    android:layout_marginRight="@dimen/inner_padding"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/noimage" />
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_patient"
+                    android:text="Name, Age / Gender"
+                    android:textColor="@color/textDark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_display_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_name"
+                    android:layout_marginBottom="6dp"
+                    android:layout_toRightOf="@+id/img_patient"
+                    android:text="IND-00000000"
+                    android:textColor="@color/textLighter"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_display_id"
+                    android:layout_marginBottom="6dp"
+                    android:layout_toRightOf="@+id/img_patient"
+                    android:lines="2"
+                    android:text="City, District, \nState"
+                    android:textColor="@color/textLight"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_phn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_address"
+                    android:layout_toRightOf="@+id/img_patient"
+                    android:drawableLeft="@drawable/phn"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:text="987654321"
+                    android:textColor="@color/textLight"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_phn"
+                    android:layout_toRightOf="@+id/img_patient"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:text="abc@gmail.com"
+                    android:textColor="@color/textLight"
+                    android:textSize="16sp" >
+                </TextView>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:background="#d0d0d0" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_update"
+                        style="@style/EzHorizontalBarButtonSmall"
+                        android:text="Update" />
+
+                    <View
+                        android:id="@+id/view_update"
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="4dip"
+                        android:layout_marginTop="4dip"
+                        android:background="#d0d0d0" />
+
+                    <Button
+                        android:id="@+id/btn_refer"
+                        style="@style/EzHorizontalBarButtonSmall"
+                        android:text="Refer" />
+
+                    <View
+                        android:id="@+id/view_refer"
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="4dip"
+                        android:layout_marginTop="4dip"
+                        android:background="#d0d0d0" />
+
+                    <Button
+                        android:id="@+id/btn_schedule"
+                        style="@style/EzHorizontalBarButtonSmall"
+                        android:text="Schedule" />
+
+                    <View
+                        android:id="@+id/view_schedule"
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="4dip"
+                        android:layout_marginTop="4dip"
+                        android:background="#d0d0d0" />
+
+                    <Button
+                        android:id="@+id/btn_checkin"
+                        style="@style/EzHorizontalBarButtonSmall"
+                        android:text="Check-in" />
+
+                    <View
+                        android:id="@+id/view_checkin"
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="4dip"
+                        android:layout_marginTop="4dip"
+                        android:background="#d0d0d0" />
+
+                    <Button
+                        android:id="@+id/btn_orders"
+                        style="@style/EzHorizontalBarButtonSmall"
+                        android:text="Orders" />
+
+                    <View
+                        android:id="@+id/view_orders"
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="4dip"
+                        android:layout_marginTop="4dip"
+                        android:background="#d0d0d0" />
+
+                    <Button
+                        android:id="@+id/btn_new_order"
+                        style="@style/EzHorizontalBarButtonSmall"
+                        android:text="New Order" />
+
+                    <View
+                        android:id="@+id/view_new_order"
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="4dip"
+                        android:layout_marginTop="4dip"
+                        android:background="#d0d0d0" />
+
+                    <Button
+                        android:id="@+id/btn_medical_records"
+                        style="@style/EzHorizontalBarButtonSmall"
+                        android:text="Medical Records" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

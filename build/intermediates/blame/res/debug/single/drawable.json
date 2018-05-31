@@ -1,0 +1,378 @@
+[
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\scrollbar_track.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\scrollbar_track.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\button_lightgrey.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\button_lightgrey.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\button_popup_close.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\button_popup_close.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_white_round.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\bg_white_round.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\drawer_patient_data.png",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\drawer_patient_data.png"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_mono_light.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\92fb99b4d84c1a1a96d0bf4718e0b482c9796085\\output\\res\\drawable\\mr_ic_media_route_connecting_mono_light.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\labphoto.png",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\labphoto.png"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\d3a65bf4381f9db1da04b07843e4b5aad6855357\\output\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_blue_round.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\bg_blue_round.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_blue.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\btn_blue.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\edit_text_bg.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\edit_text_bg.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_print.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\bg_print.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\button_cyan.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\button_cyan.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_listitem_card.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\bg_listitem_card.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_info.png",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\ic_action_info.png"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_settings_light.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\92fb99b4d84c1a1a96d0bf4718e0b482c9796085\\output\\res\\drawable\\mr_ic_settings_light.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_light.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\92fb99b4d84c1a1a96d0bf4718e0b482c9796085\\output\\res\\drawable\\mr_ic_play_light.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\drawer_patient_file.png",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\drawer_patient_file.png"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_grey.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\btn_grey.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\drawer_prescription.png",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\drawer_prescription.png"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_login.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\btn_login.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_connecting.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\4bacf2850ddba7d091dc4b7ea1398b5466007efe\\output\\res\\drawable\\cast_ic_notification_connecting.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\button_blue.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\button_blue.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\common_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\5e9027168c0594138e7f9aa98b6769fb4fd32278\\output\\res\\drawable\\common_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\chips_edittext_gb.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\chips_edittext_gb.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\edit_text_disabled_bg.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\edit_text_disabled_bg.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\drawer_calendar.png",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\drawer_calendar.png"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_dark.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\92fb99b4d84c1a1a96d0bf4718e0b482c9796085\\output\\res\\drawable\\mr_ic_media_route_mono_dark.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\lv_bg_lightblue.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\lv_bg_lightblue.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_listitem_mr.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\bg_listitem_mr.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\bordered_box_bg.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\bordered_box_bg.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\button_red.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\button_red.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\drawer_history.png",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\drawer_history.png"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\spinner_bg.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\spinner_bg.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_settings_dark.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\92fb99b4d84c1a1a96d0bf4718e0b482c9796085\\output\\res\\drawable\\mr_ic_settings_dark.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\drawer_radiology.png",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\drawer_radiology.png"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_cb_upload.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\bg_cb_upload.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_selectable_lightblue.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\bg_selectable_lightblue.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\background_tab.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\slidingTab\\build\\intermediates\\bundles\\default\\res\\drawable\\background_tab.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_calender.png",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\ic_action_calender.png"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_light.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\92fb99b4d84c1a1a96d0bf4718e0b482c9796085\\output\\res\\drawable\\mr_ic_pause_light.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\scrollbar_thumb.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\scrollbar_thumb.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_dark.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\92fb99b4d84c1a1a96d0bf4718e0b482c9796085\\output\\res\\drawable\\mr_ic_play_dark.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\common_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\5e9027168c0594138e7f9aa98b6769fb4fd32278\\output\\res\\drawable\\common_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_lightgrey.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\btn_lightgrey.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\common_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\5e9027168c0594138e7f9aa98b6769fb4fd32278\\output\\res\\drawable\\common_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_mono_dark.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\92fb99b4d84c1a1a96d0bf4718e0b482c9796085\\output\\res\\drawable\\mr_ic_media_route_connecting_mono_dark.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\common_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\5e9027168c0594138e7f9aa98b6769fb4fd32278\\output\\res\\drawable\\common_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\drawer_task.png",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\drawer_task.png"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_unread.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\bg_unread.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\design_ic_visibility.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\d3a65bf4381f9db1da04b07843e4b5aad6855357\\output\\res\\drawable\\design_ic_visibility.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_selectable_white.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\bg_selectable_white.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_light.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\92fb99b4d84c1a1a96d0bf4718e0b482c9796085\\output\\res\\drawable\\mr_ic_media_route_mono_light.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\d3a65bf4381f9db1da04b07843e4b5aad6855357\\output\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\d3a65bf4381f9db1da04b07843e4b5aad6855357\\output\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_dark.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\92fb99b4d84c1a1a96d0bf4718e0b482c9796085\\output\\res\\drawable\\mr_ic_pause_dark.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_blue_square.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\bg_blue_square.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\text_color_forgot_pwd.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\text_color_forgot_pwd.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\drawer_shadow.9.png",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\drawer_shadow.9.png"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\drawer_new_item.png",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable\\drawer_new_item.png"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Users\\Sareen\\.android\\build-cache\\1e1c848a1fb293c38cbb9437dc583b86981bdbbf\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    }
+]

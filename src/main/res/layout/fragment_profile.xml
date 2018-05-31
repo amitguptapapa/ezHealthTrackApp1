@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res/com.ezhealthtrack">
+
+    <TextView
+        android:id="@+id/txt_header_hospital"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="My Account – Profile"
+        android:textColor="#9AB8D8"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:pstsShouldExpand="true"
+        app:pstsIndicatorHeight="60dp"
+        app:pstsIndicatorColor="#88aaaaaa"
+        android:layout_below="@+id/txt_header_hospital" />
+     <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_listitem_card"
+    android:padding="6dp" >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#f8f8f8"
+        card_view:cardCornerRadius="1dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:contentPadding="0dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/inner_padding" >
+
+            <ImageView
+                android:id="@+id/img_patient"
+                android:layout_width="@dimen/img_size_avatar"
+                android:layout_height="@dimen/img_size_avatar"
+                android:layout_marginRight="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/noimage" />
+
+            <View
+                android:id="@+id/img_indicator"
+                android:layout_width="@dimen/img_size_avatar"
+                android:layout_height="3dp"
+                android:layout_below="@+id/img_patient"
+                android:background="#00FF00" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_toRightOf="@+id/img_patient"
+                android:text="Tarun Goyal, 19"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name"
+                android:layout_marginBottom="4dp"
+                android:layout_toRightOf="@+id/img_patient"
+                android:text="IND-*********"
+                android:textColor="@color/textLighter"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_referredby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_id"
+                android:layout_toRightOf="@+id/img_patient"
+                android:text="Referred by "
+                android:textColor="@color/textLighter"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_referredby_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_id"
+                android:layout_toRightOf="@+id/txt_referredby"
+                android:text="Dr. "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_referredby_1"
+                android:layout_toRightOf="@+id/img_patient"
+                android:text="On "
+                android:textColor="@color/textLighter"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_date_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_referredby"
+                android:layout_toRightOf="@+id/txt_date"
+                android:text="01/01/2000"
+                android:textColor="@color/textLight"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_date_display"
+                android:layout_marginBottom="4dp"
+                android:layout_toRightOf="@+id/img_patient"
+                android:text="Reason : "
+                android:textColor="@color/textLighter"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_reason_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_date"
+                android:layout_marginBottom="4dp"
+                android:layout_toRightOf="@+id/txt_reason"
+                android:text=""
+                android:textColor="@color/textLight"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_phn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_reason_1"
+                android:layout_toRightOf="@+id/img_patient"
+                android:drawableLeft="@drawable/phn"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="987654321"
+                android:textColor="@color/textLight"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_phn"
+                android:layout_toRightOf="@+id/img_patient"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="abc@gmail.com"
+                android:textColor="@color/textLight"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

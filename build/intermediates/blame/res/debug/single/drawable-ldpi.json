@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_action_patient_plus.png",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable-ldpi\\ic_action_patient_plus.png"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_action_back.png",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable-ldpi\\ic_action_back.png"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_action_send.png",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable-ldpi\\ic_action_send.png"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_action_message_new.png",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable-ldpi\\ic_action_message_new.png"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_action_reply.png",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\drawable-ldpi\\ic_action_reply.png"
+    }
+]

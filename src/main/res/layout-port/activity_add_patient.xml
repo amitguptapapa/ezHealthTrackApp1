@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context=".AddPatientActivity" >
+    
+    <EditText
+        android:id="@+id/edit_first_name"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:hint="First Name" />
+    
+    <EditText
+        android:id="@+id/edit_middle_name"
+        android:layout_toRightOf="@+id/edit_first_name"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:hint="Middle Name" />
+    
+    <EditText
+        android:id="@+id/edit_last_name"
+        android:layout_toRightOf="@+id/edit_middle_name"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:hint="Last Name" />
+    
+    <Spinner
+        android:id="@+id/spinner_gender"
+        android:layout_toRightOf="@+id/edit_last_name"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

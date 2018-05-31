@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ezHeaderBg"
+        android:paddingBottom="6dp"
+        android:paddingLeft="@dimen/screen_left_padding"
+        android:paddingRight="@dimen/screen_right_padding"
+        android:paddingTop="@dimen/screen_top_padding" >
+
+        <TextView
+            android:id="@+id/txt_screen_title_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Messages"
+            android:textColor="@color/ezHeaderTextColor"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/id_header_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_screen_title_message" >
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_action_back"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableRight="@drawable/ic_action_reply"
+                android:text="Reply"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/id_mline"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rl_actions"
+        android:background="#e8e8e8" />
+
+    <TextView
+        android:id="@+id/txt_subjective"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_mline"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="@dimen/inner_padding"
+        android:paddingLeft="@dimen/inner_padding_content"
+        android:paddingRight="@dimen/inner_padding_content"
+        android:paddingTop="@dimen/inner_padding"
+        android:text="Subject"
+        android:textColor="@color/textNormal"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/id_compose_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_subjective"
+        android:paddingBottom="@dimen/inner_padding"
+        android:paddingLeft="@dimen/inner_padding"
+        android:paddingRight="@dimen/inner_padding" >
+
+        <EditText
+            android:id="@+id/edit_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg"
+            android:gravity="top"
+            android:hint="Write a message"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:padding="8dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_send"
+            style="@style/EzButtonSmall"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edit_reply"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/button_blue"
+            android:text="Send" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/EzButtonSmall"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/edit_reply"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:background="@drawable/button_blue"
+            android:text="Cancel" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_compose_view" >
+
+        <LinearLayout
+            android:id="@+id/ll_messages_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

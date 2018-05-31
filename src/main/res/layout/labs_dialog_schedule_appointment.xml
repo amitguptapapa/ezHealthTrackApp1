@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="18dp" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_blue_round"
+            android:padding="20dp" >
+
+            <TextView
+                android:id="@+id/txt_header_schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="Schedule Appointment"
+                android:textColor="#6692F2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_shedule_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_header_schedule"
+                android:padding="10dp"
+                android:text=" appointment details"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_visit_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_shedule_desc"
+                android:padding="10dp"
+                android:text="Visit Location:"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_visit_location"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_shedule_desc"
+                android:layout_toRightOf="@+id/txt_visit_location"
+                android:background="@drawable/spinner_bg"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_lab_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_visit_location"
+                android:padding="10dp"
+                android:text="Lab Address:"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_lab_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_visit_location"
+                android:layout_toRightOf="@+id/txt_lab_add"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_p_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txt_lab_address" >
+
+                <TextView
+                    android:id="@+id/txt_patient_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Patient Address:"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_patient_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txt_patient_add"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_address_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_patient_add"
+                    android:padding="10dp"
+                    android:text="Address 1"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/actv_address_1"
+                    style="@style/SingleLineEditText"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_address_1"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txt_address_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_patient_add"
+                    android:layout_marginLeft="147dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@+id/txt_address_1"
+                    android:padding="10dp"
+                    android:text="Address 2"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/actv_address_2"
+                    style="@style/SingleLineEditText"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_address_2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/actv_address_1"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txt_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/actv_address_1"
+                    android:padding="10dp"
+                    android:text="Country"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/actv_country"
+                    style="@style/SingleLineEditText"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_country"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txt_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/actv_address_1"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/txt_country"
+                    android:padding="10dp"
+                    android:text="State"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/actv_state"
+                    style="@style/SingleLineEditText"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_state"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/actv_country"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txt_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/actv_address_2"
+                    android:layout_marginLeft="105dp"
+                    android:layout_toRightOf="@+id/txt_state"
+                    android:padding="10dp"
+                    android:text="City"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/actv_city"
+                    style="@style/SingleLineEditText"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_city"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/actv_state"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txt_locality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/actv_country"
+                    android:padding="10dp"
+                    android:text="Locality"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/actv_locality"
+                    style="@style/SingleLineEditText"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_locality"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txt_pincode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/actv_country"
+                    android:layout_marginLeft="163dp"
+                    android:layout_toRightOf="@+id/txt_locality"
+                    android:padding="10dp"
+                    android:text="Pin/Zipcode"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/actv_pincode"
+                    style="@style/SingleLineEditText"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_pincode"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/actv_locality"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txt_technician"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/actv_locality"
+                    android:padding="10dp"
+                    android:text="Technician"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_technician"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_technician"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/spinner_bg" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_p_details"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Reason For Visit:"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_reason"
+                style="@style/SingleLineEditText"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txt_reason"
+                android:layout_below="@+id/rl_p_details"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/txt_reason"
+                android:ems="10"
+                android:gravity="start"
+                android:minHeight="100dp"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_cond1"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edit_reason"
+                android:layout_below="@+id/edit_reason"
+                android:layout_marginTop="10dp"
+                android:padding="4dp"
+                android:text="* Reminder for confirmed appointments will be send within 24 hours prior to the appointment. "
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_cond2"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_cond1"
+                android:layout_below="@+id/txt_cond1"
+                android:layout_margin="5dp"
+                android:padding="4dp"
+                android:text="* Cancellation less than 24 hrs before appointment will not be allowed."
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_schedule"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_cond2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:background="@drawable/btn_blue"
+                android:text="Schedule"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/txt_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/close"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

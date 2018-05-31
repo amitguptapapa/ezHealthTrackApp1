@@ -1,0 +1,526 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_add_patient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context=".AddPatientActivity" >
+
+    <TextView
+        android:id="@+id/txt_header_patient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="Patients - Add New Patient"
+        android:textColor="#9AB8D8"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rl_user_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_header_patient" >
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_blue_round"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/patient_image" />
+
+        <TextView
+            android:id="@+id/txt_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_user"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Upload image after creating patient"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_header_patient"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/rl_user_img" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_blue_round"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/txt_first_name"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:text="First Name"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_first_name"
+                style="@style/SingleLineEditText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_first_name"
+                android:hint="First Name"
+                android:nextFocusDown="@+id/edit_middle_name"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_middle_name"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edit_middle_name"
+                android:layout_marginTop="10dp"
+                android:text="Middle Name"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_middle_name"
+                style="@style/SingleLineEditText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_middle_name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/edit_first_name"
+                android:hint="Middle Name"
+                android:nextFocusDown="@+id/edit_last_name"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_last_name"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edit_last_name"
+                android:layout_marginTop="10dp"
+                android:text="Last Name"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_last_name"
+                style="@style/SingleLineEditText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_last_name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/edit_middle_name"
+                android:hint="Last Name"
+                android:nextFocusDown="@+id/edit_email"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_gender"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spinner_gender"
+                android:layout_marginTop="10dp"
+                android:text="Gender"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner_gender"
+                style="@style/Spinner"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_gender"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/edit_last_name" />
+
+            <TextView
+                android:id="@+id/txt_dob"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_first_name"
+                android:layout_marginTop="10dp"
+                android:text="DOB"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_dob"
+                style="@style/SingleLineEditText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_dob"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="DOB"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_email"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edit_email"
+                android:layout_below="@+id/edit_middle_name"
+                android:layout_marginTop="10dp"
+                android:text="Email"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_email"
+                style="@style/SingleLineEditText"
+                android:layout_width="450dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_email"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/edit_dob"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:nextFocusDown="@+id/edit_phone"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_phone"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edit_phone"
+                android:layout_below="@+id/spinner_gender"
+                android:layout_marginTop="10dp"
+                android:text="Phone"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_phone"
+                style="@style/SingleLineEditText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_phone"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/edit_email"
+                android:hint="Phone"
+                android:inputType="textPhonetic"
+                android:nextFocusDown="@+id/edit_address1"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_address1"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_dob"
+                android:layout_marginTop="10dp"
+                android:text="Address 1"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_address1"
+                style="@style/SingleLineEditText"
+                android:layout_width="450dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_address1"
+                android:hint="Address 1"
+                android:nextFocusDown="@+id/edit_address2"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_address2"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edit_address2"
+                android:layout_below="@+id/edit_email"
+                android:layout_marginTop="10dp"
+                android:text="Address 2"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_address2"
+                style="@style/SingleLineEditText"
+                android:layout_width="450dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_address2"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/edit_address1"
+                android:hint="Address 2"
+                android:nextFocusDown="@+id/edit_zipcode"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_country"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_address1"
+                android:layout_marginTop="10dp"
+                android:text="Country"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/spinner_country"
+                style="@style/SingleLineEditText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_country"
+                android:completionThreshold="1"
+                android:paddingRight="35dp" />
+
+            <TextView
+                android:id="@+id/txt_state"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spinner_state"
+                android:layout_below="@+id/edit_address1"
+                android:layout_marginTop="10dp"
+                android:text="State"
+                android:textSize="15sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/spinner_state"
+                style="@style/SingleLineEditText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_state"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/spinner_country"
+                android:completionThreshold="1"
+                android:paddingRight="35dp" />
+
+            <TextView
+                android:id="@+id/txt_city"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spinner_city"
+                android:layout_below="@+id/edit_address2"
+                android:layout_marginTop="10dp"
+                android:text="City"
+                android:textSize="15sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/spinner_city"
+                style="@style/SingleLineEditText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_city"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/spinner_state"
+                android:padding="10dp"
+                android:paddingRight="35dp" />
+
+            <TextView
+                android:id="@+id/txt_locality"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spinner_locality"
+                android:layout_below="@+id/edit_address2"
+                android:layout_marginTop="10dp"
+                android:text="Locality"
+                android:textSize="15sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/spinner_locality"
+                style="@style/SingleLineEditText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_locality"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/spinner_city"
+                android:paddingRight="35dp" />
+
+            <TextView
+                android:id="@+id/txt_zipcode"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_country"
+                android:layout_marginTop="10dp"
+                android:text="Pin/Zipcode"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_zipcode"
+                style="@style/SingleLineEditText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_zipcode"
+                android:hint="Pin/Zipcode"
+                android:nextFocusDown="@+id/edit_id"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_type"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spinner_id_type"
+                android:layout_below="@+id/spinner_state"
+                android:layout_marginTop="10dp"
+                android:text="Type"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner_id_type"
+                style="@style/Spinner"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_type"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/edit_zipcode"
+                android:paddingRight="35dp" />
+
+            <TextView
+                android:id="@+id/txt_id"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edit_id"
+                android:layout_below="@+id/spinner_city"
+                android:layout_marginTop="10dp"
+                android:text="ID"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_id"
+                style="@style/SingleLineEditText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_type"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/spinner_id_type"
+                android:hint="ID"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_zipcode"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Height"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/spinner_height"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_height"
+                android:background="@drawable/spinner_bg"
+                android:padding="10dp"
+                android:paddingRight="35dp" />
+
+            <TextView
+                android:id="@+id/txt_eye_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_zipcode"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/txt_height"
+                android:padding="10dp"
+                android:text="Eye Color"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/spinner_eye_color"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_eye_color"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/spinner_height"
+                android:background="@drawable/spinner_bg"
+                android:padding="10dp"
+                android:paddingRight="35dp" />
+
+            <TextView
+                android:id="@+id/txt_hair_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_zipcode"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/txt_eye_color"
+                android:padding="10dp"
+                android:text="Hair Color"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/spinner_hair_color"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_hair_color"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/spinner_eye_color"
+                android:background="@drawable/spinner_bg"
+                android:padding="10dp"
+                android:paddingRight="35dp" />
+
+            <TextView
+                android:id="@+id/txt_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_zipcode"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/txt_hair_color"
+                android:padding="10dp"
+                android:text="Visible Mark"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edit_mark"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_mark"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/spinner_hair_color"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Mark"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_other_height"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/spinner_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Enter Height"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_add_patient"
+                android:layout_width="110dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/edit_other_height"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_grey"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

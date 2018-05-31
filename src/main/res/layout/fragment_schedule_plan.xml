@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+     
+    <TextView
+        android:id="@+id/txt_header_hospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#9AB8D8"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="My Account - Schedule Plan" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_header_hospital"
+        android:layout_above="@+id/btn_submit"
+        android:padding="10dp"
+        android:orientation="horizontal" >
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:background="@drawable/bg_blue_round" >
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Day" />
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Off" />
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="From" />
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="To" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Lunch Time" />
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="" />
+                
+            </LinearLayout>
+            
+            <View
+	           android:layout_width="match_parent"
+	           android:layout_height="5dp"
+	           android:background="#79B3FF"/>
+            
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:background="#ffffff"
+                    android:textColor="#000000"
+                    android:text="Monday" />
+                
+                <CheckBox
+                    android:id="@+id/cb_monday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                     />
+                
+                <TextView
+                    android:id="@+id/txt_monday_from"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:00 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_monday_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:15 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_monday_lout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:00 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_monday_lin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:15 AM" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:background="#ffffff"
+                    android:textColor="#000000"
+                    android:text="Tuesday" />
+                
+                <CheckBox
+                    android:id="@+id/cb_tuesday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                     />
+                
+                <TextView
+                    android:id="@+id/txt_tuesday_from"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:00 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_tuesday_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:15 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_tuesday_lout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:00 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_tuesday_lin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:15 AM" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:background="#ffffff"
+                    android:textColor="#000000"
+                    android:text="Wednesday" />
+                
+                <CheckBox
+                    android:id="@+id/cb_wednesday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                     />
+                
+                <TextView
+                    android:id="@+id/txt_wednesday_from"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:00 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_wednesday_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:15 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_wednesday_lout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:00 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_wednesday_lin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:15 AM" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:background="#ffffff"
+                    android:textColor="#000000"
+                    android:text="Thursday" />
+                
+                <CheckBox
+                    android:id="@+id/cb_thursday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                     />
+                
+                <TextView
+                    android:id="@+id/txt_thursday_from"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:00 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_thursday_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:15 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_thursday_lout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:00 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_thursday_lin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:15 AM" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:background="#ffffff"
+                    android:textColor="#000000"
+                    android:text="Friday" />
+                
+                <CheckBox
+                    android:id="@+id/cb_friday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                     />
+                
+                <TextView
+                    android:id="@+id/txt_friday_from"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:00 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_friday_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:15 AM" />
+                
+                 <TextView
+                    android:id="@+id/txt_friday_lout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:00 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_friday_lin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:15 AM" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:background="#ffffff"
+                    android:textColor="#000000"
+                    android:text="Saturday" />
+                
+                <CheckBox
+                    android:id="@+id/cb_saturday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                     />
+                
+                <TextView
+                    android:id="@+id/txt_saturday_from"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:00 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_saturday_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:15 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_saturday_lout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:00 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_saturday_lin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:15 AM" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:background="#ffffff"
+                    android:textColor="#000000"
+                    android:text="Sunday" />
+                
+                <CheckBox
+                    android:id="@+id/cb_sunday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                     />
+                
+                <TextView
+                    android:id="@+id/txt_sunday_from"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:00 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_sunday_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:15 AM" />
+                
+                 <TextView
+                    android:id="@+id/txt_sunday_lout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:00 AM" />
+                
+                <TextView
+                    android:id="@+id/txt_sunday_lin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:text="09:15 AM" />
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+	           android:layout_width="0dp"
+	           android:layout_height="match_parent"
+	           android:layout_margin="5dp"
+	           android:layout_weight="1"
+	           android:orientation="vertical"
+	           android:background="@drawable/bg_blue_round" >
+        
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Vacation Plan" />
+                
+                <View
+		           android:layout_width="match_parent"
+		           android:layout_height="5dp"
+		           android:background="#79B3FF"/>
+                
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_start_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="14sp"
+                    android:background="#ffffff"
+                    android:textColor="#000000"
+                    android:hint="Enter Start Date" />
+                
+                <TextView
+                    android:id="@+id/txt_end_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
+                    android:hint="Enter End Date" />
+                
+                <TextView
+                    android:id="@+id/btn_add_vacation"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" 
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/btn_blue"
+                    android:text="+" />
+                
+            </LinearLayout>
+            
+            <ListView
+                android:id="@+id/list_vacation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                
+            </ListView>
+                
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/btn_submit"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_blue"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

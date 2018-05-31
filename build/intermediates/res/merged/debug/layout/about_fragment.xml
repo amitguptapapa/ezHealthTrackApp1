@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:src="@drawable/ez_logo" />
+
+        <TextView
+            android:id="@+id/txt_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Version 9"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_version"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="ezHealthtrack Application Designed and Developed by Mahesha Software Pvt. Ltd."
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_description"
+            android:layout_centerHorizontal="true"
+            android:text="Copyright © 2015"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_copyright"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60sp"
+            android:text="Terms of Use"
+            android:textColor="#35759B"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_privacy_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_terms"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Privacy Policy"
+            android:textColor="#35759B"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_privacy_policy"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/btn_rate_app"
+                style="@style/EzButtonNormal"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="#35759B"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Rate"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_support"
+                style="@style/EzButtonNormal"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="#35759B"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Support"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

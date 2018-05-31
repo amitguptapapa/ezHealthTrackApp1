@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context=".ScheduleActivityDemo" >
+
+    <TableLayout
+        android:id="@+id/table_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee" />
+
+    <ScrollView
+        android:id="@+id/sv_cal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/table_header" >
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee"
+            android:clickable="true" >
+
+            <!-- <TableRow -->
+            <!-- android:id="@+id/tableRow1" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:background="#ffffff" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_margin="2dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="#F1F7FF" -->
+            <!-- android:gravity="center" -->
+            <!-- android:paddingBottom="10dp" -->
+            <!-- android:paddingTop="10dp" -->
+            <!-- android:tag="r0c0" -->
+            <!-- android:text="09:00AM" -->
+            <!-- android:textColor="#000000" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_margin="2dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="#F1F7FF" -->
+            <!-- android:gravity="center" -->
+            <!-- android:paddingBottom="10dp" -->
+            <!-- android:paddingTop="10dp" -->
+            <!-- android:tag="r0c1" -->
+            <!-- android:textColor="#000000" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_margin="2dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="#F1F7FF" -->
+            <!-- android:gravity="center" -->
+            <!-- android:paddingBottom="10dp" -->
+            <!-- android:paddingTop="10dp" -->
+            <!-- android:tag="r0c2" -->
+            <!-- android:textColor="#000000" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_margin="2dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="#F1F7FF" -->
+            <!-- android:gravity="center" -->
+            <!-- android:paddingBottom="10dp" -->
+            <!-- android:paddingTop="10dp" -->
+            <!-- android:tag="r0c3" -->
+            <!-- android:textColor="#000000" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_margin="2dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="#F1F7FF" -->
+            <!-- android:gravity="center" -->
+            <!-- android:paddingBottom="10dp" -->
+            <!-- android:paddingTop="10dp" -->
+            <!-- android:tag="r0c4" -->
+            <!-- android:textColor="#000000" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_margin="2dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="#F1F7FF" -->
+            <!-- android:gravity="center" -->
+            <!-- android:paddingBottom="10dp" -->
+            <!-- android:paddingTop="10dp" -->
+            <!-- android:tag="r0c5" -->
+            <!-- android:textColor="#000000" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_margin="2dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="#F1F7FF" -->
+            <!-- android:gravity="center" -->
+            <!-- android:paddingBottom="10dp" -->
+            <!-- android:paddingTop="10dp" -->
+            <!-- android:tag="r0c6" -->
+            <!-- android:textColor="#000000" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_margin="2dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="#F1F7FF" -->
+            <!-- android:gravity="center" -->
+            <!-- android:paddingBottom="10dp" -->
+            <!-- android:paddingTop="10dp" -->
+            <!-- android:textColor="#000000" /> -->
+            <!-- </TableRow> -->
+        </TableLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/id_buttons_top"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/id_buttons_bar"
+        android:background="@color/accent_color_light" />
+
+    <RelativeLayout
+        android:id="@+id/id_buttons_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/accent_color_light"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/ll_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#f4f4f4"
+                android:orientation="horizontal" >
+
+                <!-- <Button -->
+                <!-- android:id="@+id/btn_slots" -->
+                <!-- style="@style/EzHorizontalBarButton" -->
+                <!-- android:text="View" /> -->
+
+
+                <!-- <View -->
+                <!-- android:layout_width="1dip" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_marginBottom="4dip" -->
+                <!-- android:layout_marginTop="4dip" -->
+                <!-- android:background="#d0d0d0" /> -->
+
+
+                <!-- <Button -->
+                <!-- android:id="@+id/btn_reschedule" -->
+                <!-- style="@style/EzHorizontalBarButton" -->
+                <!-- android:text="Re-Schedule" /> -->
+
+
+                <!-- <View -->
+                <!-- android:layout_width="1dip" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_marginBottom="4dip" -->
+                <!-- android:layout_marginTop="4dip" -->
+                <!-- android:background="#d0d0d0" /> -->
+
+
+                <!-- <Button -->
+                <!-- android:id="@+id/btn_follow" -->
+                <!-- style="@style/EzHorizontalBarButton" -->
+                <!-- android:text="Follow Up" /> -->
+
+
+                <!-- <View -->
+                <!-- android:layout_width="1dip" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_marginBottom="4dip" -->
+                <!-- android:layout_marginTop="4dip" -->
+                <!-- android:background="#d0d0d0" /> -->
+
+
+                <!-- <Button -->
+                <!-- android:id="@+id/btn_sendmessage" -->
+                <!-- style="@style/EzHorizontalBarButton" -->
+                <!-- android:text="Send Message" /> -->
+
+
+                <!-- <View -->
+                <!-- android:layout_width="1dip" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_marginBottom="4dip" -->
+                <!-- android:layout_marginTop="4dip" -->
+                <!-- android:background="#d0d0d0" /> -->
+
+
+                <!-- <Button -->
+                <!-- android:id="@+id/btn_prescription" -->
+                <!-- style="@style/EzHorizontalBarButton" -->
+                <!-- android:text="Prescription" /> -->
+
+
+                <!-- <View -->
+                <!-- android:layout_width="1dip" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_marginBottom="4dip" -->
+                <!-- android:layout_marginTop="4dip" -->
+                <!-- android:background="#d0d0d0" /> -->
+
+
+                <!-- <Button -->
+                <!-- android:id="@+id/btn_visitnotes" -->
+                <!-- style="@style/EzHorizontalBarButton" -->
+                <!-- android:text="Visit Notes" /> -->
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loading_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77000000"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Using APK for Mobile only, comment the below code and uncomment the below commented code | start { -->
+<!-- increment the versionCode and versionName as per the requirement -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ezhealthtrack"
+    android:versionCode="9"
+    android:versionName="1.0.0" > <!-- } end -->
+    <!-- Using APK for Tablet only, uncomment the below commented code and comment the above code | start { -->
+    <!-- increment the versionCode and versionName as per the requirement -->
+    <!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" -->
+    <!-- package="com.ezhealthtrack" -->
+    <!-- android:versionCode="103" -->
+    <!-- android:versionName="1.0.0" > -->
+    <!-- } end -->
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+
+    <permission
+        android:name="com.ezhealthtrack.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.ezhealthtrack.gcm.permission.C2D_MESSAGE" />
+
+    <!-- Using APK for Mobile only, comment the below code and uncomment the below commented code | start { -->
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" /> <!-- } end -->
+    <!-- Using APK for Tablet only, uncomment the below commented code and comment the above code | start { -->
+    <!-- <supports-screens -->
+    <!-- android:anyDensity="false" -->
+    <!-- android:largeScreens="false" -->
+    <!-- android:normalScreens="false" -->
+    <!-- android:smallScreens="false" -->
+    <!-- android:xlargeScreens="true" /> -->
+    <!-- } end -->
+    <application
+        android:name="com.ezhealthtrack.EzApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <receiver
+            android:name="com.ezhealthtrack.gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.ezhealthtrack.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.ezhealthtrack.gcm.GcmIntentService" />
+
+        <activity
+            android:name="com.ezhealthtrack.activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ezhealthtrack.EzLaunchActivity"
+            android:label="@string/title_activity_ez_launch"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.ezhealthtrack.activity.AddPatientActivity"
+            android:label="@string/title_activity_add_patient"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.activity.SheduleActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_shedule"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.activity.SheduleActivityNew"
+            android:label="@string/title_activity_shedule"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.activity.AddVisitNotesActivity"
+            android:label="@string/title_activity_add_visit_notes"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.DentistSoap.AddDentistNotesActivity"
+            android:label="@string/title_activity_add_visit_notes"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.activity.AddVitalsActivity"
+            android:label="@string/title_activity_add_vitals"
+            android:parentActivityName="com.ezhealthtrack.activity.AddVisitNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.activity.LabOrderActivity"
+            android:label="@string/title_activity_lab_order"
+            android:parentActivityName="com.ezhealthtrack.activity.AddVisitNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.activity.RadiologyActivity"
+            android:label="@string/title_activity_radio_logy"
+            android:parentActivityName="com.ezhealthtrack.activity.AddVisitNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.DentistSoap.DentistRadiologyActivity"
+            android:label="Radiology"
+            android:parentActivityName="com.ezhealthtrack.DentistSoap.AddDentistNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.DentistSoap.DentistLabOrderActivity"
+            android:label="Lab"
+            android:parentActivityName="com.ezhealthtrack.DentistSoap.AddDentistNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.DentistSoap.DentistTreatmentPlanActivity"
+            android:label="Treatment Plan"
+            android:parentActivityName="com.ezhealthtrack.DentistSoap.AddDentistNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.DentistSoap.MasterTreatmentPlanActivity"
+            android:label="Treatment Plan"
+            android:parentActivityName="com.ezhealthtrack.DentistSoap.AddDentistNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.activity.AddPrescriptionActivity"
+            android:label="Prescription"
+            android:parentActivityName="com.ezhealthtrack.DentistSoap.AddDentistNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.DentistSoap.DentistToothwiseMasterPlanActivity"
+            android:label="MasterPlan"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.activity.PrevVisitsActivity"
+            android:label="Past Visits"
+            android:parentActivityName="com.ezhealthtrack.DentistSoap.AddDentistNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.DentistSoap.PastDentistNotesActivity"
+            android:label="Past Dentist Notes"
+            android:parentActivityName="com.ezhealthtrack.activity.PrevVisitsActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.DentistSoap.ReferDentistNotesActivity"
+            android:label="Refer Dentist Notes"
+            android:parentActivityName="com.ezhealthtrack.DentistSoap.AddDentistNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.physiciansoap.PhysicianSoapActivity"
+            android:label="@string/title_activity_add_visit_notes"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.physiciansoap.RadiologyActivity"
+            android:label="Radiology"
+            android:parentActivityName="com.ezhealthtrack.physiciansoap.PhysicianSoapActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.physiciansoap.LabOrderActivity"
+            android:label="Lab"
+            android:parentActivityName="com.ezhealthtrack.physiciansoap.PhysicianSoapActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.physiciansoap.PastPhysicianSoapActivity"
+            android:label="Past Notes"
+            android:parentActivityName="com.ezhealthtrack.activity.PrevVisitsActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.physiciansoap.ReferPhysicianSoapActivity"
+            android:label="Refer Notes"
+            android:parentActivityName="com.ezhealthtrack.activity.PrevVisitsActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.activity.EditAssistantActivity"
+            android:label="Edit Assistant"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.activity.EditAccountActivity"
+            android:label="Edit Account"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.ezhealthtrack.activity.PrescriptionActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Prescription"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.activity.UpdatePatientActivity"
+            android:label="Update Patient"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.labs.activity.LabsDashboardActivity"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.labs.activity.LabsOrderCreateActivity"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.labs.activity.LabsOrderUpdateActivity"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.labs.activity.LabsOrderDetailsActivity"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.labs.activity.LabsOrderReportDetailsActivity"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.labs.activity.LabsOrderSuccessActivity"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.labs.activity.LabsBillPaymentActivity"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.labs.activity.LabsBillPaymentHistoryActivity"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.labs.activity.LabsReportValuesActivity"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.labs.activity.LabsReportValuesViewActivity"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.labs.activity.LabsBillRefundActivity"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.orleonsoft.android.simplefilechooser.ui.FileChooserActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.activity.ComposeMessageActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.ezhealthtrack.activity.LabOrderDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.gallery.GalleryViewActivity"
+            android:label="@string/title_activity_gallery_view"
+            android:parentActivityName="com.ezhealthtrack.activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name="com.ezhealthtrack.gallery.PhotoViewActivity"
+            android:label="@string/title_activity_photo_view"
+            android:parentActivityName="com.ezhealthtrack.activity.GalleryViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name="com.ezhealthtrack.gallery.PostPhotoActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_photo_post"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name="com.ezhealthtrack.physiciansoap.PhysicianSOAPNotesViewActivity"
+            android:label="Physician SOAP Notes"
+            android:parentActivityName="com.ezhealthtrack.activity.PrevVisitsActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.print.PrintPrescriptionActivity"
+            android:label="Print Preview"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.print.PrintLabOrderedActivity"
+            android:label="Print Preview"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.print.PrintRadiologyOrderedActivity"
+            android:label="Print Preview"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.print.PrintAllInvestigationActivity"
+            android:label="Print Preview"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.physiciansoap.PhysicianSoapMiniActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="View SOAP Notes"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.physiciansoap.PhysicianSoapActivityMain"
+            android:configChanges="orientation|screenSize"
+            android:label="Physician SOAP Notes"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.print.PrintAllLabReportsActivity"
+            android:label="Print Preview"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.print.PrintLabReportActivity"
+            android:label="Print Preview"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.activity.ScheduleActivityDemo"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_shedule"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.activity.ScheduleActivityDemo_Weekly"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.activity.ScheduleActivityDemo_Daily"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.templates.physiotherapist.WebPageActivity"
+            android:label="SOAP Notes"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.todddavies.components.progressbar.main"
+            android:label="@string/app_name" >
+        </activity> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

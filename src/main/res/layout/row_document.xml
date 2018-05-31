@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/txt_name"
+        style="@style/PrescriptionData"
+        android:text="Document Name" />
+
+    <TextView
+        android:id="@+id/txt_type"
+        style="@style/PrescriptionData"
+        android:text="Document Type" />
+
+    <TextView
+        android:id="@+id/txt_upload_date"
+        style="@style/PrescriptionData"
+        android:text="Upload Date" />
+
+    <TextView
+        android:id="@+id/txt_action"
+        style="@style/PrescriptionData"
+        android:text="Action" />
+
+</TableRow>

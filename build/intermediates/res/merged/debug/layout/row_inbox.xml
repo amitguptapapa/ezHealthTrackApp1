@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_listitem_mr"
+    android:paddingLeft="@dimen/screen_left_padding"
+    android:paddingRight="@dimen/screen_right_padding" >
+
+    <TextView
+        android:id="@+id/txt_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="250dp"
+        android:paddingBottom="@dimen/inner_padding"
+        android:paddingRight="@dimen/inner_padding"
+        android:paddingTop="@dimen/inner_padding"
+        android:text="header"
+        android:textColor="@color/textNormal"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/inner_padding"
+        android:paddingRight="@dimen/inner_padding"
+        android:paddingTop="@dimen/inner_padding"
+        android:text="Subject"
+        android:textColor="@color/textDarker"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="@dimen/inner_padding"
+        android:paddingTop="@dimen/inner_padding"
+        android:text="Date"
+        android:textColor="@color/textLight"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_blue_round"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/txt_new_tentative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txt_new_tentative"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_blue"
+                android:drawableLeft="@drawable/confirm"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Accept"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_reschedule"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/btn_accept"
+                android:background="@drawable/btn_blue"
+                android:drawableLeft="@drawable/re_schedule"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Re-Schedule"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_sendmessage"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/btn_reschedule"
+                android:background="@drawable/btn_blue"
+                android:drawableLeft="@drawable/send_message"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Send Message"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_reject"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/btn_sendmessage"
+                android:background="@drawable/btn_blue"
+                android:drawableLeft="@drawable/reject"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Reject"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

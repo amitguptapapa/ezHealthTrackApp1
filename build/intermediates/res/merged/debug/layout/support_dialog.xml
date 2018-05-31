@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="12dp" >
+
+    <include
+        android:id="@+id/id_header"
+        layout="@layout/ez_dialog_header" >
+    </include>
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_header"
+        android:padding="10dp"
+        android:text="Email: support@ezhealthtrack.com"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_email"
+        android:padding="10dp"
+        android:text="Phone: +91 80-87-343840 or +91 98-71-154389"
+        android:textSize="16sp" />
+
+    <include
+        android:id="@+id/id_footer"
+        layout="@layout/ez_dialog_footer" >
+    </include>
+
+</RelativeLayout>

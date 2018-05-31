@@ -1,0 +1,1268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txt_objective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_subjective"
+                android:layout_marginTop="15dp"
+                android:background="@color/HeaderBg"
+                android:padding="10dp"
+                android:text="Examination"
+                android:textColor="@color/TextBlue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_objective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_objective"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txt_vitals"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/HeaderBg"
+                        android:padding="10dp"
+                        android:text="@string/Vitals"
+                        android:textColor="@color/TextBlue"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_vitals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:visibility="visible" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/txt7"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/BP"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/edit_bpl"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_toRightOf="@+id/txt7"
+                            android:background="@drawable/edit_text_disabled_bg"
+                            android:gravity="center_vertical"
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="10dp"
+                            android:tag="low"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/edit_bph"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/edit_bpl"
+                            android:background="@drawable/edit_text_disabled_bg"
+                            android:gravity="center_vertical"
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="10dp"
+                            android:tag="high"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/edit_bph"
+                            android:gravity="center_vertical"
+                            android:text="@string/mmofhg"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/txt8"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/Pulse"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/edit_pulse"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_toRightOf="@+id/txt8"
+                            android:background="@drawable/edit_text_disabled_bg"
+                            android:gravity="center_vertical"
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="10dp"
+                            android:tag="puls"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/edit_pulse"
+                            android:gravity="center_vertical"
+                            android:text="@string/beatspermin"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/txt9"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/RespiratoryRate"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/edit_respiratory"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_toRightOf="@+id/txt9"
+                            android:background="@drawable/edit_text_disabled_bg"
+                            android:gravity="center_vertical"
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="10dp"
+                            android:tag="rr"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/edit_respiratory"
+                            android:gravity="center_vertical"
+                            android:text="@string/cyclespermin"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/txt10"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/Temprature"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/edit_temp"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_toRightOf="@+id/txt10"
+                            android:background="@drawable/edit_text_disabled_bg"
+                            android:gravity="center_vertical"
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="10dp"
+                            android:tag="temp"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/edit_temp"
+                            android:gravity="center_vertical"
+                            android:text="degree Fahrenheit"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/txt_weight"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/Weight"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/edit_weight"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_toRightOf="@+id/txt_weight"
+                            android:background="@drawable/edit_text_disabled_bg"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:tag="weig"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/edit_weight"
+                            android:gravity="center_vertical"
+                            android:text="@string/kilogram"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/txt_height"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/Height"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/edit_height"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_toRightOf="@+id/txt_height"
+                            android:background="@drawable/edit_text_disabled_bg"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:tag="heig"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/edit_height"
+                            android:gravity="center_vertical"
+                            android:text="@string/centimeters"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/txt_waist"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:text="Waist"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/edit_waist"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_toRightOf="@+id/txt_waist"
+                            android:background="@drawable/edit_text_disabled_bg"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:tag="waist"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/edit_waist"
+                            android:gravity="center_vertical"
+                            android:text="@string/centimeters"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/txt_bmi"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:text="BMI"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/edit_bmi"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_toRightOf="@+id/txt_bmi"
+                            android:background="@drawable/edit_text_disabled_bg"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:tag="bmi"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txt_bmi_unit"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/edit_bmi"
+                            android:gravity="center_vertical"
+                            android:text="kg/m2"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txt_general_exam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/HeaderBg"
+                        android:padding="10dp"
+                        android:text="@string/GeneralExamination"
+                        android:textColor="@color/TextBlue"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_general_exam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:visibility="visible" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/txt_pallor"
+                            android:layout_width="160dp"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="@string/Pallor"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_pallor"
+                            android:layout_width="300dp"
+                            android:layout_height="30dp"
+                            android:layout_toRightOf="@+id/txt_pallor"
+                            android:orientation="horizontal"
+                            android:tag="pall" >
+
+                            <RadioButton
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:enabled="false"
+                                android:text="@string/Present" />
+
+                            <RadioButton
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:enabled="false"
+                                android:text="@string/Absent" />
+                        </RadioGroup>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/txt_icterus"
+                            android:layout_width="160dp"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="@string/Icterus"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_icterus"
+                            android:layout_width="300dp"
+                            android:layout_height="30dp"
+                            android:layout_toRightOf="@+id/txt_icterus"
+                            android:orientation="horizontal"
+                            android:tag="icte" >
+
+                            <RadioButton
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:enabled="false"
+                                android:text="@string/Present" />
+
+                            <RadioButton
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:enabled="false"
+                                android:text="@string/Absent" />
+                        </RadioGroup>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/txt_clubbing"
+                            android:layout_width="160dp"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="@string/Clubbing"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_clubbing"
+                            android:layout_width="300dp"
+                            android:layout_height="30dp"
+                            android:layout_toRightOf="@+id/txt_clubbing"
+                            android:orientation="horizontal"
+                            android:tag="club" >
+
+                            <RadioButton
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:enabled="false"
+                                android:text="@string/Present" />
+
+                            <RadioButton
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:enabled="false"
+                                android:text="@string/Absent" />
+                        </RadioGroup>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/txt_cyanosis"
+                            android:layout_width="160dp"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="@string/Cyanosis"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_cyanosis"
+                            android:layout_width="300dp"
+                            android:layout_height="30dp"
+                            android:layout_toRightOf="@+id/txt_cyanosis"
+                            android:orientation="horizontal"
+                            android:tag="cyan" >
+
+                            <RadioButton
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:enabled="false"
+                                android:text="@string/Present" />
+
+                            <RadioButton
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:enabled="false"
+                                android:text="@string/Absent" />
+                        </RadioGroup>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/txt_edema"
+                            android:layout_width="160dp"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="@string/Edema"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_edema"
+                            android:layout_width="300dp"
+                            android:layout_height="30dp"
+                            android:layout_toRightOf="@+id/txt_edema"
+                            android:orientation="horizontal"
+                            android:tag="edem" >
+
+                            <RadioButton
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:enabled="false"
+                                android:text="@string/Present" />
+
+                            <RadioButton
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:enabled="false"
+                                android:text="@string/Absent" />
+                        </RadioGroup>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/txt_lymphadenopathy"
+                            android:layout_width="160dp"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="@string/Lymphadenopathy"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_lymphadenopathy"
+                            android:layout_width="300dp"
+                            android:layout_height="30dp"
+                            android:layout_toRightOf="@+id/txt_lymphadenopathy"
+                            android:orientation="horizontal"
+                            android:tag="lymp" >
+
+                            <RadioButton
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:enabled="false"
+                                android:text="@string/Present" />
+
+                            <RadioButton
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:enabled="false"
+                                android:text="@string/Absent" />
+                        </RadioGroup>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/txt_denture_question"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/HeaderBg"
+                            android:padding="10dp"
+                            android:text="Denture Questions"
+                            android:textColor="@color/TextBlue"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_denture_questions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:visibility="visible" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp" >
+
+                            <TextView
+                                android:id="@+id/txt77"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:gravity="center_vertical"
+                                android:text="1. How Many Dentures?"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/edit_ques_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_below="@+id/txt77"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:gravity="center_vertical"
+                                android:inputType="textMultiLine"
+                                android:paddingLeft="10dp"
+                                android:tag="hmd"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp" >
+
+                            <TextView
+                                android:id="@+id/txt88"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:gravity="center_vertical"
+                                android:text="2. How Long Worn?"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_below="@+id/txt88"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:gravity="center_vertical"
+                                android:inputType="textMultiLine"
+                                android:paddingLeft="10dp"
+                                android:tag="hlw"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp" >
+
+                            <TextView
+                                android:id="@+id/txt19"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:gravity="center_vertical"
+                                android:text="3. Age Of present Set?"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:layout_below="@+id/txt19"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:gravity="center_vertical"
+                                android:inputType="textMultiLine"
+                                android:paddingLeft="10dp"
+                                android:tag="aps"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp" >
+
+                            <TextView
+                                android:id="@+id/txt110"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:gravity="center_vertical"
+                                android:text="4. Satisfaction with Denture?"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <RadioGroup
+                                android:id="@+id/rg_satisfaction"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_below="@+id/txt110"
+                                android:orientation="horizontal" >
+
+                                <RadioButton
+                                    android:layout_weight="1"
+                                    android:enabled="false"
+                                    android:tag="extr"
+                                    android:text="Extremely"
+                                    android:textSize="16sp" />
+
+                                <RadioButton
+                                    android:layout_weight="1"
+                                    android:enabled="false"
+                                    android:tag="very"
+                                    android:text="Very"
+                                    android:textSize="16sp" />
+
+                                <RadioButton
+                                    android:layout_weight="1"
+                                    android:enabled="false"
+                                    android:tag="iar"
+                                    android:text="Its all Right"
+                                    android:textSize="16sp" />
+
+                                <RadioButton
+                                    android:layout_weight="1"
+                                    android:enabled="false"
+                                    android:tag="ns"
+                                    android:text="Not Satisfied"
+                                    android:textSize="16sp" />
+
+                                <RadioButton
+                                    android:layout_weight="1"
+                                    android:enabled="false"
+                                    android:tag="cn"
+                                    android:text="Completely not"
+                                    android:textSize="16sp" />
+                            </RadioGroup>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_below="@+id/rg_satisfaction"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:gravity="center_vertical"
+                                android:hint="Reason"
+                                android:inputType="textMultiLine"
+                                android:paddingLeft="10dp"
+                                android:tag="swd"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp" >
+
+                            <TextView
+                                android:id="@+id/txt99"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:gravity="center_vertical"
+                                android:text="5. Why they want a change?"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_below="@+id/txt99"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:gravity="center_vertical"
+                                android:inputType="textMultiLine"
+                                android:paddingLeft="10dp"
+                                android:tag="wwc"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txt_oral_exam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/HeaderBg"
+                        android:padding="10dp"
+                        android:text="@string/OralExamination"
+                        android:textColor="@color/TextBlue"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_oral_exam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:visibility="visible" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/txt_soft_tissue_examination"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/HeaderBg"
+                            android:padding="10dp"
+                            android:text="@string/SoftTissueExamination"
+                            android:textColor="@color/TextBlue"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_soft_tissue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                        <TextView
+                            android:id="@+id/txt_gingiva"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:padding="5dp"
+                            android:text="@string/Gingiva"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="60dp" >
+
+                            <TextView
+                                android:id="@+id/txt_color"
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:padding="5dp"
+                                android:text="@string/Color"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/edit_color"
+                                android:layout_width="300dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:gravity="center_vertical"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:tag="colo"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="60dp" >
+
+                            <TextView
+                                android:id="@+id/txt_contour"
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:padding="5dp"
+                                android:text="@string/Contour"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/edit_contour"
+                                android:layout_width="300dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:gravity="center_vertical"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:tag="cont"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="60dp" >
+
+                            <TextView
+                                android:id="@+id/txt_consistancy"
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:padding="5dp"
+                                android:text="@string/Consistency"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/edit_consistancy"
+                                android:layout_width="300dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:gravity="center_vertical"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:tag="cons"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txt_buccal"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:padding="5dp"
+                                android:text="@string/Buccalmucosa"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/edit_buccal"
+                                android:layout_width="300dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:gravity="center_vertical"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:tag="bm"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txt_alveolar"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:padding="5dp"
+                                android:text="@string/Alveolarmucosa"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/edit_alveolar"
+                                android:layout_width="300dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:gravity="center_vertical"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:tag="am"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txt_toungue"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:padding="5dp"
+                                android:text="@string/Tongue"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/edit_toungue"
+                                android:layout_width="300dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:gravity="center_vertical"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:tag="toun"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txt_lips"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:padding="5dp"
+                                android:text="@string/Lips"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/edit_lips"
+                                android:layout_width="300dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:gravity="center_vertical"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:tag="lips"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txt_softpalate"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:padding="5dp"
+                                android:text="@string/Softpalate"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/edit_softpalate"
+                                android:layout_width="300dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:gravity="center_vertical"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:tag="sp"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txt_hardpalate"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:padding="5dp"
+                                android:text="@string/Hardpalate"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/edit_hardpalate"
+                                android:layout_width="300dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:gravity="center_vertical"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:tag="hp"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txt_floorofmouth"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:padding="5dp"
+                                android:text="@string/floorofmouth"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/edit_floorofmouth"
+                                android:layout_width="300dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:gravity="center_vertical"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:tag="fm"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/txt_gingivalrecession"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:padding="5dp"
+                                android:text="@string/gingivalrecession"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/edit_gingivalrecession"
+                                android:layout_width="300dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:gravity="center_vertical"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:tag="gr"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_hard_tissue_examination"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:lineSpacingExtra="5dp"
+                        android:padding="10dp"
+                        android:text="@string/HardTissueExamination"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_hte_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/txt_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/close"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_lab_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/txt_name"
+        android:layout_marginTop="10dp"
+        android:background="#777777" />
+
+    <EditText
+        android:id="@+id/edit_iopa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_1"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/cb_iopa"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:tag="value"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/cb_iopa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:tag="iopa"
+        android:text="IOPA"
+        android:textSize="16sp" />
+
+</RelativeLayout>

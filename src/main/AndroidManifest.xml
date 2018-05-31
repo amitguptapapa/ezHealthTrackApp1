@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Using APK for Mobile only, comment the below code and uncomment the below commented code | start { --><!-- increment the versionCode and versionName as per the requirement -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ezhealthtrack"
+    android:versionCode="9"
+    android:versionName="1.0.0">
+
+    <!-- } end -->
+
+
+    <!-- Using APK for Tablet only, uncomment the below commented code and comment the above code | start { -->
+    <!-- increment the versionCode and versionName as per the requirement -->
+
+
+    <!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" -->
+    <!-- package="com.ezhealthtrack" -->
+    <!-- android:versionCode="103" -->
+    <!-- android:versionName="1.0.0" > -->
+
+
+    <!-- } end -->
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+
+    <permission
+        android:name="com.ezhealthtrack.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.ezhealthtrack.gcm.permission.C2D_MESSAGE" />
+
+    <!-- Using APK for Mobile only, comment the below code and uncomment the below commented code | start { -->
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="false" />
+
+    <!-- } end -->
+
+
+    <!-- Using APK for Tablet only, uncomment the below commented code and comment the above code | start { -->
+
+
+    <!-- <supports-screens -->
+    <!-- android:anyDensity="false" -->
+    <!-- android:largeScreens="false" -->
+    <!-- android:normalScreens="false" -->
+    <!-- android:smallScreens="false" -->
+    <!-- android:xlargeScreens="true" /> -->
+
+
+    <!-- } end -->
+
+    <application
+        android:name="com.ezhealthtrack.EzApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon, android:theme">
+        <receiver
+            android:name=".gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.ezhealthtrack.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".gcm.GcmIntentService" />
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EzLaunchActivity"
+            android:label="@string/title_activity_ez_launch"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".activity.AddPatientActivity"
+            android:label="@string/title_activity_add_patient"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.SheduleActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_shedule"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.SheduleActivityNew"
+            android:label="@string/title_activity_shedule"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.AddVisitNotesActivity"
+            android:label="@string/title_activity_add_visit_notes"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".DentistSoap.AddDentistNotesActivity"
+            android:label="@string/title_activity_add_visit_notes"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.AddVitalsActivity"
+            android:label="@string/title_activity_add_vitals"
+            android:parentActivityName=".activity.AddVisitNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.LabOrderActivity"
+            android:label="@string/title_activity_lab_order"
+            android:parentActivityName=".activity.AddVisitNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.RadiologyActivity"
+            android:label="@string/title_activity_radio_logy"
+            android:parentActivityName=".activity.AddVisitNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".DentistSoap.DentistRadiologyActivity"
+            android:label="Radiology"
+            android:parentActivityName=".DentistSoap.AddDentistNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".DentistSoap.DentistLabOrderActivity"
+            android:label="Lab"
+            android:parentActivityName=".DentistSoap.AddDentistNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".DentistSoap.DentistTreatmentPlanActivity"
+            android:label="Treatment Plan"
+            android:parentActivityName=".DentistSoap.AddDentistNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".DentistSoap.MasterTreatmentPlanActivity"
+            android:label="Treatment Plan"
+            android:parentActivityName=".DentistSoap.AddDentistNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.AddPrescriptionActivity"
+            android:label="Prescription"
+            android:parentActivityName=".DentistSoap.AddDentistNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".DentistSoap.DentistToothwiseMasterPlanActivity"
+            android:label="MasterPlan"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.PrevVisitsActivity"
+            android:label="Past Visits"
+            android:parentActivityName=".DentistSoap.AddDentistNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".DentistSoap.PastDentistNotesActivity"
+            android:label="Past Dentist Notes"
+            android:parentActivityName=".activity.PrevVisitsActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".DentistSoap.ReferDentistNotesActivity"
+            android:label="Refer Dentist Notes"
+            android:parentActivityName=".DentistSoap.AddDentistNotesActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".physiciansoap.PhysicianSoapActivity"
+            android:label="@string/title_activity_add_visit_notes"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".physiciansoap.RadiologyActivity"
+            android:label="Radiology"
+            android:parentActivityName=".physiciansoap.PhysicianSoapActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".physiciansoap.LabOrderActivity"
+            android:label="Lab"
+            android:parentActivityName=".physiciansoap.PhysicianSoapActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".physiciansoap.PastPhysicianSoapActivity"
+            android:label="Past Notes"
+            android:parentActivityName=".activity.PrevVisitsActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".physiciansoap.ReferPhysicianSoapActivity"
+            android:label="Refer Notes"
+            android:parentActivityName=".activity.PrevVisitsActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.EditAssistantActivity"
+            android:label="Edit Assistant"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.EditAccountActivity"
+            android:label="Edit Account"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name=".activity.PrescriptionActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Prescription"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.UpdatePatientActivity"
+            android:label="Update Patient"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".labs.activity.LabsDashboardActivity"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".labs.activity.LabsOrderCreateActivity"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".labs.activity.LabsOrderUpdateActivity"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".labs.activity.LabsOrderDetailsActivity"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".labs.activity.LabsOrderReportDetailsActivity"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".labs.activity.LabsOrderSuccessActivity"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".labs.activity.LabsBillPaymentActivity"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".labs.activity.LabsBillPaymentHistoryActivity"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".labs.activity.LabsReportValuesActivity"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".labs.activity.LabsReportValuesViewActivity"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".labs.activity.LabsBillRefundActivity"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name="com.orleonsoft.android.simplefilechooser.ui.FileChooserActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.ComposeMessageActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name=".activity.LabOrderDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.ezhealthtrack.gallery.GalleryViewActivity"
+            android:label="@string/title_activity_gallery_view"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name="com.ezhealthtrack.gallery.PhotoViewActivity"
+            android:label="@string/title_activity_photo_view"
+            android:parentActivityName=".activity.GalleryViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name="com.ezhealthtrack.gallery.PostPhotoActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_photo_post"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".physiciansoap.PhysicianSOAPNotesViewActivity"
+            android:label="Physician SOAP Notes"
+            android:parentActivityName=".activity.PrevVisitsActivity"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".print.PrintPrescriptionActivity"
+            android:label="Print Preview"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".print.PrintLabOrderedActivity"
+            android:label="Print Preview"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".print.PrintRadiologyOrderedActivity"
+            android:label="Print Preview"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".print.PrintAllInvestigationActivity"
+            android:label="Print Preview"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".physiciansoap.PhysicianSoapMiniActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="View SOAP Notes"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".physiciansoap.PhysicianSoapActivityMain"
+            android:configChanges="orientation|screenSize"
+            android:label="Physician SOAP Notes"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".print.PrintAllLabReportsActivity"
+            android:label="Print Preview"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".print.PrintLabReportActivity"
+            android:label="Print Preview"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".activity.ScheduleActivityDemo"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_shedule"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.ScheduleActivityDemo_Weekly"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".activity.ScheduleActivityDemo_Daily"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".templates.physiotherapist.WebPageActivity"
+            android:label="SOAP Notes"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+    </application>
+
+</manifest>

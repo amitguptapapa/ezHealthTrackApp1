@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_add_patient.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\layout-land\\activity_add_patient.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_edit_account.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\layout-land\\activity_edit_account.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_edit_assistant.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\layout-land\\activity_edit_assistant.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\layout-land\\labs_activity_edit_account.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\layout-land\\labs_activity_edit_account.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_dashboard.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\layout-land\\activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\layout-land\\labs_activity_add_patient.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\layout-land\\labs_activity_add_patient.xml"
+    }
+]

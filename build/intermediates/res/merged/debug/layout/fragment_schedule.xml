@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_schedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="@dimen/screen_right_margin" >
+
+    <include
+        android:id="@+id/id_header"
+        layout="@layout/ez_header_filter_count" />
+
+    <GridView
+        android:id="@+id/list_patients"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_header"
+        android:columnWidth="@dimen/grid_column_width"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth" />
+
+</RelativeLayout>

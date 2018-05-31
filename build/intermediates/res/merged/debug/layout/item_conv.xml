@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <View
+        android:id="@+id/id_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e8e8e8" />
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_line"
+        android:background="@drawable/bg_selectable_white"
+        android:paddingBottom="@dimen/inner_padding"
+        android:paddingLeft="@dimen/inner_padding_content"
+        android:paddingRight="@dimen/inner_padding_content"
+        android:paddingTop="@dimen/inner_padding" >
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/textNormal"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginRight="17dp"
+            android:layout_toLeftOf="@+id/txt_date"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Text-1"
+            android:textColor="@color/textDarker"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Date"
+            android:textColor="@color/textLight"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header"
+        android:linksClickable="true"
+        android:paddingBottom="@dimen/inner_padding"
+        android:paddingLeft="@dimen/inner_padding_content"
+        android:paddingRight="@dimen/inner_padding_content"
+        android:paddingTop="@dimen/inner_padding"
+        android:text="Text"
+        android:textColor="@color/textDarker"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

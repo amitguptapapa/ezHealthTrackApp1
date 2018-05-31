@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\menu\\ez_print.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\menu\\ez_print.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\menu\\lab_order.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\menu\\lab_order.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\menu\\ez_launch.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\menu\\ez_launch.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\menu\\add_vitals.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\menu\\add_vitals.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\menu\\menu_messages.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\menu\\menu_messages.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\menu\\add_patient.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\menu\\add_patient.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\menu\\radio_logy.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\menu\\radio_logy.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\menu\\menu_send.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\menu\\menu_send.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\menu\\add_visit_notes.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\menu\\add_visit_notes.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\menu\\menu_upload_gallery_image.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\menu\\menu_upload_gallery_image.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\menu\\menu_gallery_view.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\menu\\menu_gallery_view.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\menu\\action_bar.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\menu\\action_bar.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\menu\\schedule.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\menu\\schedule.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\menu\\menu_gallery_photo_view.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\menu\\menu_gallery_photo_view.xml"
+    }
+]

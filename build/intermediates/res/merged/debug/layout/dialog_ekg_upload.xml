@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="12dp" >
+
+    <include
+        android:id="@+id/id_header"
+        layout="@layout/ez_dialog_header" >
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_header" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_window"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/btn_click"
+                style="@style/EzButtonSmaller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Click" />
+
+            <TextView
+                android:id="@+id/btn_upload"
+                style="@style/EzButtonSmaller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/btn_click"
+                android:background="@drawable/button_blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Choose File" />
+
+            <TextView
+                android:id="@+id/txt_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/btn_upload"
+                android:padding="5dp"
+                android:text="No file chosen."
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_extentions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_upload"
+                android:padding="10dp"
+                android:text="Upload supported files are jpg, gif, png, pdf and txt."
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_document_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_extentions"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Document Name"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_document_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_document_name"
+                android:background="@drawable/edit_text_bg"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_close"
+                style="@style/EzButtonSmall"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/edit_document_name"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_toLeftOf="@+id/btn_submit"
+                android:background="@drawable/button_popup_close"
+                android:text="Close"
+                android:textColor="@color/textDarker" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/EzButtonSmall"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/edit_document_name"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button_cyan"
+                android:text="Submit" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

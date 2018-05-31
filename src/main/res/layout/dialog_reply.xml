@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="380dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_blue_round"
+        android:padding="0dp" >
+
+        <TextView
+            android:id="@+id/txt_header_hospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="15dp"
+            android:text="Reply Message"
+            android:textColor="#6692F2"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+       
+        <TextView
+            android:id="@+id/txt_dr_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_header_hospital"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="To"
+            android:textStyle="bold"
+            android:textColor="#6692F2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          	android:layout_alignLeft="@+id/edit_subject"
+            android:layout_below="@+id/txt_header_hospital"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_dr_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Subject:"
+            android:textColor="#6692F2"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/edit_subject"
+            android:layout_width="340dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_dr_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_subject"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_subject"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Body"
+            android:textColor="#6692F2"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_body"
+            android:layout_width="340dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/txt_subject"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_subject"
+            android:background="#ffffff"
+            android:gravity="start"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/edit_body"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_blue"
+            android:text="Reply"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/txt_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/close"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+     
+
+</RelativeLayout>

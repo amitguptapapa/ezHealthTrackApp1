@@ -1,0 +1,269 @@
+{
+
+   "name": "degree",
+
+   "id": "degree",
+
+   "style": "width:123px;",
+
+   "option": [
+
+      {
+
+         "value": "MBBS",
+
+         "name": "MBBS"
+
+      },
+
+      {
+
+         "value": "MS Urology",
+
+         "name": "MS Urology"
+
+      },
+
+      {
+
+         "value": "MS Oncology",
+
+         "name": "MS Oncology"
+
+      },
+
+      {
+
+         "value": "MS Vascular",
+
+         "name": "MS Vascular"
+
+      },
+
+      {
+
+         "value": "MS Cardiothoracic and vascular surgery",
+
+         "name": "MS Cardiothoracic and vascular surgery"
+
+      },
+
+      {
+
+         "value": "MS Thoracic",
+
+         "name": "MS Thoracic"
+
+      },
+
+      {
+
+         "value": "MS Neuro",
+
+         "name": "MS Neuro"
+
+      },
+
+      {
+
+         "value": "MS Pediatric",
+
+         "name": "MS Pediatric"
+
+      },
+
+      {
+
+         "value": "MS Plastic",
+
+         "name": "MS Plastic"
+
+      },
+
+      {
+
+         "value": "MS Surgical gastroenterology",
+
+         "name": "MS Surgical gastroenterology"
+
+      },
+
+      {
+
+         "value": "MS Hepato-pancreatic-biliary",
+
+         "name": "MS Hepato-pancreatic-biliary"
+
+      },
+
+      {
+
+         "value": "MD Clinical pharmacology",
+
+         "name": "MD Clinical pharmacology"
+
+      },
+
+      {
+
+         "value": "MD Clinical haematology",
+
+         "name": "MD Clinical haematology"
+
+      },
+
+      {
+
+         "value": "MD Pulmonary medicine",
+
+         "name": "MD Pulmonary medicine"
+
+      },
+
+      {
+
+         "value": "MD Neuroradiology",
+
+         "name": "MD Neuroradiology"
+
+      },
+
+      {
+
+         "value": "MD Nephrology",
+
+         "name": "MD Nephrology"
+
+      },
+
+      {
+
+         "value": "MD Neonatology",
+
+         "name": "MD Neonatology"
+
+      },
+
+      {
+
+         "value": "MD Oncology",
+
+         "name": "MD Oncology"
+
+      },
+
+      {
+
+         "value": "MD Gastroenterology",
+
+         "name": "MD Gastroenterology"
+
+      },
+
+      {
+
+         "value": "MD Cardiology",
+
+         "name": "MD Cardiology"
+
+      },
+
+      {
+
+         "value": "MD Neurology",
+
+         "name": "MD Neurology"
+
+      },
+
+      {
+
+         "value": "MD Rheumatology",
+
+         "name": "MD Rheumatology"
+
+      },
+
+      {
+
+         "value": "MD Endocrinology",
+
+         "name": "MD Endocrinology"
+
+      },
+
+      {
+
+         "value": "MD Clinical immunology",
+
+         "name": "MD Clinical immunology"
+
+      },
+
+      {
+
+         "value": "MD Cardiac anaesthesia",
+
+         "name": "MD Cardiac anaesthesia"
+
+      },
+
+      {
+
+         "value": "MD Haematopathology",
+
+         "name": "MD Haematopathology"
+
+      },
+
+      {
+
+         "value": "MD Medical genetics",
+
+         "name": "MD Medical genetics"
+
+      },
+
+      {
+
+         "value": "MD Hepatology",
+
+         "name": "MD Hepatology"
+
+      },
+
+      {
+
+         "value": "BDS",
+
+         "name": "BDS"
+
+      },
+
+      {
+
+         "value": "MDS Periodontics",
+
+         "name": "MDS Periodontics"
+
+      },
+
+      {
+
+         "value": "MDS Pedodontics",
+
+         "name": "MDS Pedodontics"
+
+      },
+
+      {
+
+         "value": "MDS Prosthodontics",
+
+         "name": "MDS Prosthodontics"
+
+      }
+
+   ]
+
+}

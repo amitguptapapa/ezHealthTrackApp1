@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ezHealthTrack-Doctor</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_calender">Calender</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_patients">PatientsActivity</string>
+    <string name="logout">Logout</string>
+    <string name="add_patient">Add New Patient</string>
+    <string name="title_activity_add_patient">Add New Patient</string>
+    <string name="title_activity_shedule">ScheduleActivity</string>
+    <string name="title_activity_add_visit_notes">AddVisitNotes</string>
+    <string name="title_activity_add_vitals">AddVitalsActivity</string>
+    <string name="title_activity_lab_order">LabOrderActivity</string>
+    <string name="title_activity_radio_logy">RadioLogyActivity</string>
+    <string name="title_activity_gallery_view">Photos</string>
+    <string name="title_activity_photo_view">Photo details</string>
+    <string name="title_activity_photo_post">Edit / Update photo details</string>
+    <string name="smoke">Smoking (Yes/No)</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_ez_launch">EzLaunchActivity</string>
+    <string name="txt_details">Details</string>
+    <string name="action_month">Pick a Day</string>
+    <string name="action_day">Today</string>
+    <string name="action_week">Week</string>
+
+</resources>

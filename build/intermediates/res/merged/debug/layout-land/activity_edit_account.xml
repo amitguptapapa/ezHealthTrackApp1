@@ -1,0 +1,651 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_edit_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context=".AddPatientActivity" >
+
+    <TextView
+        android:id="@+id/txt_header_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="My Account - Account"
+        android:textColor="#9AB8D8"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_header_account"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_blue_round"
+            android:padding="15dp" >
+
+            <TextView
+                android:id="@+id/txt_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp"
+                android:text="First Name"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edit_first_name"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_first_name"
+                android:background="@drawable/edit_text_bg"
+                android:hint="First Name"
+                android:nextFocusDown="@+id/edit_middle_name"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_middle_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/txt_first_name"
+                android:padding="10dp"
+                android:text="Middle Name"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edit_middle_name"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_middle_name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/edit_first_name"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Middle Name"
+                android:nextFocusDown="@+id/edit_last_name"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_toRightOf="@+id/txt_middle_name"
+                android:padding="10dp"
+                android:text="Last Name"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edit_last_name"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_last_name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/edit_middle_name"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Last Name"
+                android:nextFocusDown="@+id/edit_email"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="135dp"
+                android:layout_toRightOf="@+id/txt_last_name"
+                android:padding="10dp"
+                android:text="Gender"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/spinner_gender"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_gender"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/edit_last_name"
+                android:background="@drawable/spinner_bg"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/txt_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_first_name"
+                android:padding="10dp"
+                android:text="DOB"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edit_dob"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_dob"
+                android:background="@drawable/edit_text_bg"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:hint="DOB"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_middle_name"
+                android:layout_marginLeft="170dp"
+                android:layout_toRightOf="@+id/txt_dob"
+                android:padding="10dp"
+                android:text="Email"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="450dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_email"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/edit_dob"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:nextFocusDown="@+id/edit_phone"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_gender"
+                android:layout_marginLeft="400dp"
+                android:layout_toRightOf="@+id/txt_email"
+                android:padding="10dp"
+                android:text="Phone"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_phone"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/edit_email"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Phone"
+                android:nextFocusDown="@+id/edit_address1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_address1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_dob"
+                android:padding="10dp"
+                android:text="Address 1"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edit_address1"
+                android:layout_width="450dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_address1"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Address 1"
+                android:nextFocusDown="@+id/edit_address2"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_address2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_dob"
+                android:layout_marginLeft="365dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/txt_address1"
+                android:padding="10dp"
+                android:text="Address 2"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edit_address2"
+                android:layout_width="450dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_address2"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/edit_address1"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Address 2"
+                android:nextFocusDown="@+id/edit_zipcode"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_address1"
+                android:padding="10dp"
+                android:text="Country"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/spinner_country"
+                style="@style/SingleLineEditText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_country"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/txt_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_address1"
+                android:layout_marginLeft="155dp"
+                android:layout_toRightOf="@+id/txt_country"
+                android:padding="10dp"
+                android:text="State"
+                android:textSize="15dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/spinner_state"
+                style="@style/SingleLineEditText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_state"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/spinner_country"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/txt_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_address2"
+                android:layout_marginLeft="170dp"
+                android:layout_toRightOf="@+id/txt_state"
+                android:padding="10dp"
+                android:text="City"
+                android:textSize="15dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/spinner_city"
+                style="@style/SingleLineEditText"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_city"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/spinner_state"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/txt_locality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_address2"
+                android:layout_marginLeft="182dp"
+                android:layout_toRightOf="@+id/txt_city"
+                android:padding="10dp"
+                android:text="Locality"
+                android:textSize="15dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/spinner_locality"
+                style="@style/SingleLineEditText"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_locality"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/spinner_city"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/txt_zipcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_country"
+                android:padding="10dp"
+                android:text="Pin/Zipcode"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edit_zipcode"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_zipcode"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Pin/Zipcode"
+                android:nextFocusDown="@+id/edit_id"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_blood_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_state"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/txt_zipcode"
+                android:padding="10dp"
+                android:text="Blood Group"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edit_blood_group"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_blood_group"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/edit_zipcode"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Blood Group"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_zipcode"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Height"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/spinner_height"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_height"
+                android:background="@drawable/spinner_bg"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/txt_eye_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_zipcode"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/txt_height"
+                android:padding="10dp"
+                android:text="Eye Color"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/spinner_eye_color"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_eye_color"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/spinner_height"
+                android:background="@drawable/spinner_bg"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/txt_hair_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_zipcode"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/txt_eye_color"
+                android:padding="10dp"
+                android:text="Hair Color"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/spinner_hair_color"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_hair_color"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/spinner_eye_color"
+                android:background="@drawable/spinner_bg"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/txt_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_zipcode"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/txt_hair_color"
+                android:padding="10dp"
+                android:text="Visible Mark"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edit_mark"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_mark"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/spinner_hair_color"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Mark"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_other_height"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/spinner_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Enter Height"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_vaccination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_other_height"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Vaccinations"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edit_vaccination"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_vaccination"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Vaccinations"
+                android:maxLines="4"
+                android:minHeight="50dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_add_patient"
+                android:layout_width="110dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/edit_vaccination"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_grey"
+                android:text="Update"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" >
+
+            <ImageView
+                android:id="@+id/img_user"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_blue_round"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/noimage" />
+
+            <TextView
+                android:id="@+id/txt_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_user"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Click to upload new image"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_password"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_upload"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Reset Password"
+                android:textColor="#ee0000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_password"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Current Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_new_password"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edit_password"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_bg"
+                android:hint="New Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_confirm_password"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edit_new_password"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_password"
+                android:layout_width="110dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/edit_confirm_password"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_grey"
+                android:text="Update"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/img_signature"
+                android:layout_width="227dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/btn_password"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_blue_round"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/signature" />
+
+            <TextView
+                android:id="@+id/txt_upload_sig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_signature"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Click to upload new signature"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_remove_sig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_upload_sig"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Remove Signature"
+                android:textColor="#1E90FF"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

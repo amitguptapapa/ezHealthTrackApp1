@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\layout-port\\activity_dashboard.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\layout-port\\activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\layout-port\\activity_add_patient.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\layout-port\\activity_add_patient.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\layout-port\\row_inbox.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\layout-port\\row_inbox.xml"
+    },
+    {
+        "merged": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\build\\intermediates\\res\\merged\\debug\\layout-port\\row_outbox.xml",
+        "source": "C:\\Workspace\\EzHealthTrackApp\\ezHealthTrackApp\\src\\main\\res\\layout-port\\row_outbox.xml"
+    }
+]

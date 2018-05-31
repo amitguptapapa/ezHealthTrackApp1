@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/txt_sno"
+        style="@style/PrescriptionData"
+        android:text="S.No." />
+
+    <TextView
+        android:id="@+id/txt_formulation"
+        style="@style/PrescriptionData"
+        android:text="Formulation" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        style="@style/PrescriptionData"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/txt_detail"
+        style="@style/PrescriptionData"
+        android:text="Details" />
+
+    <TextView
+        android:id="@+id/txt_frequency_detail"
+        style="@style/PrescriptionData"
+        android:text="Frequency" />
+
+    <TextView
+        android:id="@+id/txt_refills"
+        style="@style/PrescriptionData"
+        android:text="Refill" />
+
+    <TextView
+        android:id="@+id/txt_notes"
+        style="@style/PrescriptionData"
+        android:text="Notes" />
+
+    <TextView
+        android:id="@+id/txt_history"
+        style="@style/PrescriptionData"
+        android:text="History" />
+
+</TableRow>

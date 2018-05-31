@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:scrollbarThumbVertical="@drawable/scrollbar_thumb"
+        android:scrollbarTrackVertical="@drawable/scrollbar_track" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/img_home"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/homeicon" />
+
+                <TextView
+                    android:id="@+id/txt_dashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/img_home"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_home"
+                    android:gravity="center_vertical"
+                    android:text="Home - Dashboard"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_appointments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_home"
+                android:layout_marginTop="10dp"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/img_appointments"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/appointments_lab" />
+
+                <TextView
+                    android:id="@+id/txt_appointments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/img_appointments"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_appointments"
+                    android:gravity="center_vertical"
+                    android:text="Appointments"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_confirmed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_appointments"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_appointments"
+                    android:gravity="center_vertical"
+                    android:text="Confirmed"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_new_tentative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_confirmed"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_appointments"
+                    android:gravity="center_vertical"
+                    android:text="New/Tentative"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_schedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_new_tentative"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_appointments"
+                    android:gravity="center_vertical"
+                    android:text="Schedule"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_schedule"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_appointments"
+                    android:gravity="center_vertical"
+                    android:text="History"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_appointments"
+                android:layout_marginTop="10dp"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/img_notifications"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/notification" />
+
+                <TextView
+                    android:id="@+id/txt_notifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/img_notifications"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_notifications"
+                    android:gravity="center_vertical"
+                    android:text="Messaging"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_inbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_notifications"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_notifications"
+                    android:gravity="center_vertical"
+                    android:text="Inbox"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_outbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_inbox"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_notifications"
+                    android:gravity="center_vertical"
+                    android:text="Outbox"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_alerts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_outbox"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_notifications"
+                    android:gravity="center_vertical"
+                    android:text="Alerts"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_patients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_notifications"
+                android:layout_marginTop="10dp"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/img_patients"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/patient_lab" />
+
+                <TextView
+                    android:id="@+id/txt_patients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/img_patients"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_patients"
+                    android:gravity="center_vertical"
+                    android:text="Patients"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_patients_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_patients"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_patients"
+                    android:gravity="center_vertical"
+                    android:text="Patients"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_orders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_patients"
+                android:layout_marginTop="10dp"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/img_appointments"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/orders" />
+
+                <TextView
+                    android:id="@+id/txt_orders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/img_appointments"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_appointments"
+                    android:gravity="center_vertical"
+                    android:text="Orders"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_orders_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_orders"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_appointments"
+                    android:gravity="center_vertical"
+                    android:text="Orders"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_new_orders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_orders_list"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_appointments"
+                    android:gravity="center_vertical"
+                    android:text="New Orders"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_partial_fullfiled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_new_orders"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_appointments"
+                    android:gravity="center_vertical"
+                    android:text="Partial Fullfiled"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_completed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_partial_fullfiled"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_appointments"
+                    android:gravity="center_vertical"
+                    android:text="Completed"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_billing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_orders"
+                android:layout_marginTop="10dp"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/img_billing"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/billing" />
+
+                <TextView
+                    android:id="@+id/txt_billing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/img_billing"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_billing"
+                    android:gravity="center_vertical"
+                    android:text="Billings"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_billings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_billing"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_billing"
+                    android:gravity="center_vertical"
+                    android:text="Billings"
+                    android:textSize="18sp" />
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/txt_not_paid" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="25dp" -->
+                <!-- android:layout_below="@+id/txt_billing" -->
+                <!-- android:layout_marginLeft="10dp" -->
+                <!-- android:layout_marginTop="5dp" -->
+                <!-- android:layout_toRightOf="@+id/img_billing" -->
+                <!-- android:gravity="center_vertical" -->
+                <!-- android:text="Not Paid" -->
+                <!-- android:textSize="18sp" /> -->
+
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/txt_partially_paid" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="25dp" -->
+                <!-- android:layout_below="@+id/txt_not_paid" -->
+                <!-- android:layout_marginLeft="10dp" -->
+                <!-- android:layout_marginTop="5dp" -->
+                <!-- android:layout_toRightOf="@+id/img_billing" -->
+                <!-- android:gravity="center_vertical" -->
+                <!-- android:text="Partially Paid" -->
+                <!-- android:textSize="18sp" /> -->
+
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/txt_full_paid" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="25dp" -->
+                <!-- android:layout_below="@+id/txt_partially_paid" -->
+                <!-- android:layout_marginLeft="10dp" -->
+                <!-- android:layout_marginTop="5dp" -->
+                <!-- android:layout_toRightOf="@+id/img_billing" -->
+                <!-- android:gravity="center_vertical" -->
+                <!-- android:text="Fully Paid" -->
+                <!-- android:textSize="18sp" /> -->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_referrals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_billing"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_referrals"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/referrals" />
+
+                <TextView
+                    android:id="@+id/txt_referrals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/img_referrals"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_referrals"
+                    android:gravity="center_vertical"
+                    android:text="Referrals"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_in_referrals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_referrals"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_referrals"
+                    android:gravity="center_vertical"
+                    android:text="In–Referral"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_out_referral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_in_referrals"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_referrals"
+                    android:gravity="center_vertical"
+                    android:text="Out–Referral"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_assistants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_referrals"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_assistants"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/doctor_assistant" />
+
+                <TextView
+                    android:id="@+id/txt_assistants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/img_assistants"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_assistants"
+                    android:gravity="center_vertical"
+                    android:text="Assistants"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_assistants_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_assistants"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_assistants"
+                    android:gravity="center_vertical"
+                    android:text="Assistants"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_myaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_assistants"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/img_myaccount"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/myaccount" />
+
+                <TextView
+                    android:id="@+id/txt_myaccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/img_myaccount"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_myaccount"
+                    android:gravity="center_vertical"
+                    android:text="My Account"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_myaccount"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/img_myaccount"
+                    android:gravity="center_vertical"
+                    android:text="Account"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_myaccount"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/img_logout"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/logout" />
+
+                <TextView
+                    android:id="@+id/txt_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/img_logout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_logout"
+                    android:gravity="center_vertical"
+                    android:text="Logout"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_logout"
+                android:layout_margin="15dp"
+                android:paddingLeft="60dp"
+                android:paddingTop="25dp"
+                android:text="Version 1.19"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

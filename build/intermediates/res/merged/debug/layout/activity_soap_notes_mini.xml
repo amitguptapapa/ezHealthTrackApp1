@@ -1,0 +1,1289 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:id="@+id/full_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/inner_padding_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txt_subjective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/subjective"
+                android:textColor="#35759B"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_subjective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_subjective"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_sujective"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="start"
+                        android:text="@string/chief_complaint"
+                        android:textColor="@color/textDark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/edit_cheif_complaint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toRightOf="@+id/txt"
+                        android:gravity="start"
+                        android:tag="cc"
+                        android:text="-"
+                        android:textColor="@color/textDark"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_hp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/txt_hp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/HP"
+                        android:textColor="@color/textDark"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_hp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_hp"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/rl_history_of_present_illness"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+id/txt1"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="@string/Historyofpresentillness"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/edit_history_of_present_illness"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/txt1"
+                                android:gravity="start"
+                                android:tag="hpi"
+                                android:text="-"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_past_history"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+id/txt2"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="@string/Pastmedicalhistory"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/edit_past_history"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/txt2"
+                                android:gravity="start"
+                                android:tag="pmh"
+                                android:text="-"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_family_history"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+id/txt3"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="@string/FamilyHistory"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/edit_family_hsitory"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/txt3"
+                                android:gravity="start"
+                                android:tag="fh"
+                                android:text="-"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_personal_history"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+id/txt4"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="@string/PersonalHistory"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/edit_peronal_history"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/txt4"
+                                android:gravity="start"
+                                android:tag="ph"
+                                android:text="-"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_drug_histoy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+id/txt5"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="@string/DrugHistory"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/edit_drug_history"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/txt5"
+                                android:gravity="start"
+                                android:tag="dha"
+                                android:text="-"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <CheckBox
+                                android:id="@+id/cb_smoke"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/smoke"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_smoke"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+id/txt_smoke"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="For how long Year-Months"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/edit_year"
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_below="@+id/txt_smoke"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:hint="Year"
+                                android:tag="sy"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/edit_Month"
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_below="@+id/txt_smoke"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_toRightOf="@+id/edit_year"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:hint="Month"
+                                android:tag="sm"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/txt_unit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_smoke"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_toRightOf="@+id/edit_Month"
+                                android:text="Year-Month"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/txt_how"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/edit_year"
+                                android:layout_marginTop="5dp"
+                                android:text="How many in a Day"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/edit_day"
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_below="@+id/txt_how"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:hint="In a day"
+                                android:padding="5dp"
+                                android:tag="sd"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <CheckBox
+                                android:id="@+id/cb_alcohol"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="Alcohol(Yes/No)"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_alcohol"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+id/txt_alcohol"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="For how long Year-Months"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/edit_year1"
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_below="@+id/txt_alcohol"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:hint="Year"
+                                android:tag="ay"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/edit_Month1"
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_below="@+id/txt_alcohol"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_toRightOf="@+id/edit_year1"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:hint="Month"
+                                android:padding="5dp"
+                                android:tag="am"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/txt_unit1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_alcohol"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_toRightOf="@+id/edit_Month1"
+                                android:text="Year-Month"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/txt_how1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/edit_year1"
+                                android:layout_marginTop="5dp"
+                                android:text="How much in a Day"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/edit_day1"
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_below="@+id/txt_how1"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/edit_text_disabled_bg"
+                                android:hint="In a day"
+                                android:padding="5dp"
+                                android:tag="ad"
+                                android:textColor="@color/textDark"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_note_subjective"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+id/txt6"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="@string/Note"
+                                android:textColor="@color/textDark"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/edit_note_subjective"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/txt6"
+                                android:gravity="start"
+                                android:tag="note"
+                                android:text="-"
+                                android:textColor="@color/textDark"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_objective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_subjective"
+                android:layout_marginTop="15dp"
+                android:text="Examination"
+                android:textColor="#35759B"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_objective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_objective"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_vitals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" >
+
+                    <TextView
+                        android:id="@+id/txt_vitals"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Vitals"
+                        android:textColor="@color/textDark"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_vitals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_bp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/txt7"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/BP"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/edit_bph"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/txt7"
+                            android:gravity="center_vertical"
+                            android:tag="high"
+                            android:text="high"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/edit_bpl"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/edit_bph"
+                            android:gravity="center_vertical"
+                            android:tag="low"
+                            android:text="low"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/edit_bpl"
+                            android:gravity="center_vertical"
+                            android:text="@string/mmofhg"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_pulse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/txt8"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/Pulse"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/edit_pulse"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/txt8"
+                            android:gravity="center_vertical"
+                            android:tag="puls"
+                            android:text="-"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/edit_pulse"
+                            android:gravity="center_vertical"
+                            android:text="@string/beatspermin"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_respiratory_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/txt9"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/RespiratoryRate"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/edit_respiratory"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/txt9"
+                            android:gravity="center_vertical"
+                            android:tag="rr"
+                            android:text="-"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/edit_respiratory"
+                            android:gravity="center_vertical"
+                            android:text="@string/cyclespermin"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_temperature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/txt10"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/Temprature"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/edit_temp"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/txt10"
+                            android:gravity="center_vertical"
+                            android:tag="temp"
+                            android:text="-"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/txt_Fahrenheit"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/edit_temp"
+                            android:gravity="center_vertical"
+                            android:text="degree Fahrenheit"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/txt_weight"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/Weight"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/edit_weight"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/txt_weight"
+                            android:gravity="center_vertical"
+                            android:tag="weig"
+                            android:text="-"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/edit_weight"
+                            android:gravity="center_vertical"
+                            android:text="@string/kilogram"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/txt_height"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/Height"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/edit_height"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/txt_height"
+                            android:gravity="center_vertical"
+                            android:tag="heig"
+                            android:text="-"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/edit_height"
+                            android:gravity="center_vertical"
+                            android:text="@string/centimeters"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_waist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/txt_waist"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="Waist"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/edit_waist"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/txt_waist"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:tag="waist"
+                            android:text="-"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/edit_waist"
+                            android:gravity="center_vertical"
+                            android:text="@string/centimeters"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_bmi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/txt_bmi"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="BMI"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/edit_bmi"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/txt_bmi"
+                            android:enabled="false"
+                            android:gravity="start"
+                            android:singleLine="true"
+                            android:tag="bmi"
+                            android:text="-"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/txt_bmi_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/edit_bmi"
+                            android:text="kg/m2"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ll_note_vital"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/txt_note_vital"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Note"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/edit_note_vital"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/txt_note_vital"
+                            android:gravity="start"
+                            android:tag="note"
+                            android:text="-"
+                            android:textColor="@color/textDark"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_symptoms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/txt_symptons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Symptoms"
+                        android:textColor="@color/textDark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/edit_symptoms"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_symptons"
+                        android:gravity="start"
+                        android:paddingLeft="@dimen/inner_padding"
+                        android:tag="symp"
+                        android:text="-"
+                        android:textColor="@color/textDark"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_general_examination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/txt_general_exam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/GeneralExamination"
+                        android:textColor="@color/textDark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/edit_general_exam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_general_exam"
+                        android:gravity="start"
+                        android:paddingLeft="@dimen/inner_padding"
+                        android:tag="ge"
+                        android:text="-"
+                        android:textColor="@color/textDark"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_systemic_examination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/txt_exam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Systemic Examination (Inspection, Palpation, Percussion, Auscultation)"
+                        android:textColor="@color/textDark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/edit_se"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_exam"
+                        android:gravity="start"
+                        android:paddingLeft="@dimen/inner_padding"
+                        android:tag="se"
+                        android:text="-"
+                        android:textColor="@color/textDark"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_note_ge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/txt_note_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Note"
+                        android:textColor="@color/textDark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/edit_ex_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_note_1"
+                        android:gravity="start"
+                        android:paddingLeft="@dimen/inner_padding"
+                        android:tag="note"
+                        android:text="-"
+                        android:textColor="@color/textDark"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_diagnosis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_objective"
+                android:layout_marginTop="15dp"
+                android:text="@string/Diagnosis"
+                android:textColor="#35759B"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/ll_diagnosis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_diagnosis"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:id="@+id/txt_provisonal_diagnosis"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/ProvisionalDiagnosis"
+                    android:textColor="@color/textDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/actv_provisonal_diagnosis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txt_provisonal_diagnosis"
+                    android:gravity="center_vertical"
+                    android:text="-"
+                    android:textColor="@color/textDark"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_final_diagnosis"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/actv_provisonal_diagnosis"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/FinalDiagnosis"
+                    android:textColor="@color/textDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/actv_final_diagnosis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/actv_provisonal_diagnosis"
+                    android:layout_toRightOf="@+id/txt_final_diagnosis"
+                    android:gravity="center_vertical"
+                    android:text="-"
+                    android:textColor="@color/textDark"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_diagnosis"
+                android:layout_marginTop="15dp"
+                android:text="@string/Plan"
+                android:textColor="#35759B"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_plan"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_radiology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text=""
+                    android:textColor="@color/textDark"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TableLayout
+                    android:id="@+id/table"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#f8f8f8"
+                    android:padding="1px"
+                    android:stretchColumns="1" >
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/txt_lab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text=""
+                    android:textColor="@color/textDark"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TableLayout
+                    android:id="@+id/table_lab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#f8f8f8"
+                    android:padding="1px"
+                    android:stretchColumns="1" >
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/txt_ekg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="EKG/ECG"
+                    android:textColor="@color/textDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TableLayout
+                    android:id="@+id/table_ekg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#f8f8f8"
+                    android:padding="1px"
+                    android:stretchColumns="1" >
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/txt_prescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Prescription"
+                    android:textColor="@color/textDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:id="@+id/table_prescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#f8f8f8"
+                    android:padding="1px"
+                    android:stretchColumns="1" >
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/txt_special_instructions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/inner_padding"
+                    android:text="Special Instruction "
+                    android:textColor="@color/textDark"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_treatment_plan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/txt_t_plan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Treatment Plan"
+                        android:textColor="@color/textDark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/edit_tp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_t_plan"
+                        android:gravity="start"
+                        android:tag="tp"
+                        android:text="-"
+                        android:textColor="@color/textDark"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_treatment_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/textDark"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_allergy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/textDark"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_plan"
+                android:layout_marginTop="15dp" >
+
+                <LinearLayout
+                    android:id="@+id/ll_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f4f4f4"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="visible"
+                    tools:ignore="UselessParent" >
+
+                    <TextView
+                        android:id="@+id/txt_photos_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:text="Photos"
+                        android:textColor="@color/TextBlue"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_photos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+
+                        <ImageView
+                            android:id="@+id/img_gallery_photo"
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="@dimen/inner_padding"
+                            android:background="#e8e8e8"
+                            android:gravity="center"
+                            android:onClick="onShowGallery" />
+
+                        <Button
+                            android:id="@+id/btn_photos_view"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_alignBottom="@+id/img_gallery_photo"
+                            android:layout_marginRight="@dimen/inner_padding"
+                            android:layout_toEndOf="@+id/img_gallery_photo"
+                            android:background="@drawable/btn_lightgrey"
+                            android:onClick="onShowGallery"
+                            android:text="View all"
+                            android:textAllCaps="false"
+                            android:textColor="#646464"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_photo_add"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_alignBottom="@+id/btn_photos_view"
+                            android:layout_marginRight="@dimen/inner_padding"
+                            android:layout_toEndOf="@+id/btn_photos_view"
+                            android:background="@drawable/btn_lightgrey"
+                            android:onClick="onAddPhoto"
+                            android:text="Add Photo"
+                            android:textAllCaps="false"
+                            android:textColor="#646464"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_photo_add_small"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_alignBottom="@+id/btn_photos_view"
+                            android:layout_toEndOf="@+id/btn_photos_view"
+                            android:background="@drawable/btn_lightgrey"
+                            android:onClick="onAddPhoto"
+                            android:text="Add Photo"
+                            android:textAllCaps="false"
+                            android:textColor="#646464"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_gallery"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/inner_padding_content"
+                    android:text="Note: Use Tablet App / Web portal to edit details of the Visit Notes"
+                    android:textColor="@color/textLight"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_private_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_gallery"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/txt_pn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Private Notes"
+                    android:textColor="@color/textDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_private_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:text="-"
+                    android:textColor="@color/textDark"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

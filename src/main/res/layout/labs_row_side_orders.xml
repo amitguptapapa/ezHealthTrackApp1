@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_blue_round" >
+
+        <TextView
+            android:id="@+id/txt_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:text="1410-0910000117-00002, Amrish Puri, 42/M Order Date: 21/10/2014 12:06 PM, Order Status: New, Bill Status: Not Paid, Assign To: Kanav Sareen"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txt_orders"
+            android:layout_marginTop="10dp"
+            android:padding="5dp" >
+
+            <Button
+                android:id="@+id/btn_view_order"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/btn_blue"
+                android:drawableLeft="@drawable/view_details"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=" View Order"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:layout_toRightOf="@+id/btn_view_order"
+                android:background="@drawable/btn_blue"
+                android:drawableLeft="@drawable/reject"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=" Cancel"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_sampling"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:layout_toRightOf="@+id/btn_cancel"
+                android:background="@drawable/btn_blue"
+                android:drawableLeft="@drawable/sampling"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=" Sampling"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_sendmessage"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:layout_toRightOf="@+id/btn_sampling"
+                android:background="@drawable/btn_blue"
+                android:drawableLeft="@drawable/send_message"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Send Message"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_billing"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:layout_toRightOf="@+id/btn_sendmessage"
+                android:background="@drawable/btn_blue"
+                android:drawableLeft="@drawable/billings"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=" Billings"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

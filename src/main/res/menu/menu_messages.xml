@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:com.ezhealthtrack="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/id_compose"
+        android:icon="@drawable/ic_action_message_new"
+        android:orderInCategory="4"
+        android:title="New Message"
+        android:visible="false"
+        com.ezhealthtrack:showAsAction="ifRoom|withText"/>
+
+</menu>

@@ -1,0 +1,14 @@
+<resources>
+
+    <dimen name="drawer_content_padding">250dp</dimen>
+    <dimen name="drawer_size">240dp</dimen>
+    <dimen name="screen_left_margin">6dp</dimen>
+    <dimen name="screen_right_margin">6dp</dimen>
+    <dimen name="screen_padding">24dp</dimen>
+    <dimen name="screen_left_padding">24dp</dimen>
+    <dimen name="screen_right_padding">24dp</dimen>
+    <dimen name="screen_top_padding">24dp</dimen>
+    <dimen name="screen_bottom_padding">18dp</dimen>
+    <dimen name="title_text_size">20sp</dimen>
+
+</resources>

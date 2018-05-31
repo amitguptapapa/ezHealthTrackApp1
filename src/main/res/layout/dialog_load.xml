@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res/com.ezhealthtrack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <com.todddavies.components.progressbar.ProgressWheel
+            android:id="@+id/pw_spinner"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            ProgressWheel:barColor="#0097D6"
+            ProgressWheel:barLength="60dp"
+            ProgressWheel:barWidth="5dp"
+            ProgressWheel:rimColor="#330097D6"
+            ProgressWheel:rimWidth="10dp"
+            ProgressWheel:text="Loading..."
+            ProgressWheel:textColor="#FFFFFF"
+            ProgressWheel:textSize="14sp" 
+          />
+    
+
+</LinearLayout>

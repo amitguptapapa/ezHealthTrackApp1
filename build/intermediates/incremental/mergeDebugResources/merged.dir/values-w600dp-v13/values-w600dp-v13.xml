@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="img_size_avatar">90dp</dimen>
+    <dimen name="inner_padding">12dp</dimen>
+    <dimen name="inner_padding_content">18dp</dimen>
+</resources>

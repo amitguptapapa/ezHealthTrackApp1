@@ -1,0 +1,239 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_labs_add_patient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context=".AddPatientActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp" >
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_blue_round"
+        android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/edit_first_name"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/edit_middle_name"
+        android:hint="First Name" />
+    
+    <EditText
+        android:id="@+id/edit_middle_name"
+        android:layout_toRightOf="@+id/edit_first_name"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        android:layout_width="220dp"
+        android:textSize="16sp"
+        android:layout_height="60dp"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/edit_last_name"
+        android:layout_marginLeft="10dp"
+        android:hint="Middle Name" />
+    
+    <EditText
+        android:id="@+id/edit_last_name"
+        android:layout_toRightOf="@+id/edit_middle_name"
+        android:background="@drawable/edit_text_bg"
+        android:layout_width="220dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:nextFocusDown="@+id/edit_email"
+         android:layout_marginLeft="10dp"
+        android:layout_height="60dp"
+        android:hint="Last Name" />
+    
+    <Spinner
+        android:id="@+id/spinner_gender"
+        android:layout_toRightOf="@+id/edit_last_name"
+        android:layout_width="220dp"
+         android:layout_marginLeft="10dp"
+        android:layout_height="60dp"
+        android:padding="10dp" 
+        />
+    
+    <EditText
+        android:id="@+id/edit_dob"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/edit_first_name"
+        android:background="@drawable/edit_text_bg"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:editable="false"
+        android:focusable="false"
+        android:hint="DOB" />
+    
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="450dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress"
+        android:nextFocusDown="@+id/edit_phone"
+        android:background="@drawable/edit_text_bg"
+        android:layout_below="@+id/edit_first_name"
+        android:layout_toRightOf="@+id/edit_dob"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:hint="Email" 
+        android:padding="10dp"/>
+    
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edit_first_name"
+        android:layout_toRightOf="@+id/edit_email"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="textPhonetic"
+        android:nextFocusDown="@+id/edit_address1"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:hint="Phone" />
+    
+    <EditText
+        android:id="@+id/edit_address1"
+        android:layout_width="450dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edit_dob"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/edit_address2"
+        android:hint="Address 1" />
+    
+    <EditText
+        android:id="@+id/edit_address2"
+        android:layout_width="450dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edit_dob"
+        android:layout_toRightOf="@+id/edit_address1"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/edit_zipcode"
+        android:hint="Address 2" />
+    
+    <Spinner
+        android:id="@+id/spinner_country"
+        android:layout_below="@+id/edit_address1"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp" 
+        />
+    
+    <Spinner
+        android:id="@+id/spinner_state"
+        android:layout_toRightOf="@+id/spinner_country"
+         android:layout_below="@+id/edit_address1"
+        android:layout_width="220dp"
+         android:layout_marginLeft="10dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+         android:padding="10dp"
+        />
+    
+    <Spinner
+        android:id="@+id/spinner_city"
+        android:layout_toRightOf="@+id/spinner_state"
+         android:layout_below="@+id/edit_address1"
+        android:layout_width="220dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="10dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        />
+    
+    <Spinner
+        android:id="@+id/spinner_locality"
+        android:layout_toRightOf="@+id/spinner_city"
+         android:layout_below="@+id/edit_address1"
+        android:layout_width="220dp"
+        android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        />
+    
+    <EditText
+        android:id="@+id/edit_zipcode"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/spinner_country"
+        android:background="@drawable/edit_text_bg"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:inputType="number"
+        android:nextFocusDown="@+id/edit_id"
+        android:hint="Pin/Zipcode" 
+        android:padding="10dp"/>
+    
+    <Spinner
+        android:id="@+id/spinner_id_type"
+        android:layout_toRightOf="@+id/edit_zipcode"
+        android:layout_below="@+id/spinner_country"
+        android:layout_width="220dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        />
+    
+    <EditText
+        android:id="@+id/edit_id"
+        android:layout_toRightOf="@+id/spinner_id_type"
+        android:layout_below="@+id/spinner_country"
+        android:background="@drawable/edit_text_bg"
+        android:layout_width="220dp"
+        android:textSize="16sp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:layout_marginLeft="10dp"
+        android:hint="ID" 
+        android:padding="10dp"/>
+    
+    <Button
+        android:id="@+id/btn_add_patient"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/edit_id"
+        android:background="@drawable/btn_grey"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:text="Submit" />
+    </RelativeLayout>
+    
+    </ScrollView>
+
+</RelativeLayout>

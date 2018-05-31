@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="15dp"
+        android:text="Patient Info"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/rl_search_orderset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_name"
+        android:background="#f0f0f0"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:padding="1dp" >
+
+            <AutoCompleteTextView
+                android:id="@+id/actv_orderset"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toStartOf="@+id/btn_add_orderset"
+                android:background="#ffffff"
+                android:hint="Search for Order Set"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                tools:ignore="LabelFor" />
+
+            <Button
+                android:id="@+id/btn_add_orderset"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_blue"
+                android:gravity="center"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="Add Order Set"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_main_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_search_orderset"
+        android:background="#d0d0d0"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <RelativeLayout
+            android:id="@+id/id_main_box_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_text_bg"
+                android:padding="1dp" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/txt_add_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toStartOf="@+id/btn_add"
+                    android:background="#ffffff"
+                    android:hint="Search for Radiology Test"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    tools:ignore="LabelFor" />
+
+                <Button
+                    android:id="@+id/btn_add_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/btn_blue"
+                    android:gravity="center"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:text="Add Radiology Test"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:id="@+id/scroll_main"
+                android:layout_width="match_parent"
+                android:layout_height="475dp"
+                android:layout_below="@+id/rl_search"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_options"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_doc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp" >
+
+                        <TableLayout
+                            android:id="@+id/table"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#f8f8f8"
+                            android:padding="1px"
+                            android:stretchColumns="1" >
+                        </TableLayout>
+
+                        <EditText
+                            android:id="@+id/edit_note"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/table"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_bg"
+                            android:gravity="center_vertical"
+                            android:hint="Notes"
+                            android:lines="3"
+                            android:padding="10dp"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_main_box"
+        android:background="#f0f0f0"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_blue"
+            android:gravity="center"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="Upload Reports"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</RelativeLayout>
